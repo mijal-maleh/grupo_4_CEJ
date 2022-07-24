@@ -8,4 +8,4 @@ CEJ web, un centro de valores, al alcance de todos, en cualquier parte del mundo
 Nosotras, 3 colaboradoras dispuestas a acrecer.. 
 Malka Jacobo (43) soy mamá, emprendedora y estudiante entusiasta.
 Mijal Maleh (34) soy mamá, .........
-Caro Lustron  
+Caro Lustron (28) soy lic en recursos humanos, pero trabajo en una empresa de Marketing. Siempre en constante crecimiento y con ganas de aprender cosas nuevas.
