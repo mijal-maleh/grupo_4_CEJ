@@ -7,5 +7,15 @@ CEJ web, un centro de valores, al alcance de todos, en cualquier parte del mundo
   
 Nosotras, 3 colaboradoras dispuestas a acrecer.. 
 Malka Jacobo (43) soy mamá, emprendedora y estudiante entusiasta.
-Mijal Maleh (34) soy mamá, .........
+Mijal Maleh (34) soy mamá, dedicada a la enseñanza y transmision de valores judaicos, aprovechando los beneficios del mundo moderno cambiante para optimizar mi funcion.
 Caro Lustron (28) soy lic en recursos humanos, pero trabajo en una empresa de Marketing. Siempre en constante crecimiento y con ganas de aprender cosas nuevas.
+
+Nos inspiramos con..
+
+https://www.chabadyp.com/     Estructura general
+https://www.coderhouse.com/   Scroller de cursos y opcion de ver más 
+https://www.farmacity.com/    Carrito de compras
+https://github.com/login      Formulario login
+https://es-la.facebook.com/   Formulario de registro
+https://www.chabad.org/       Gama de colores   
+https://jabad.org.ar/         Gama de colores
