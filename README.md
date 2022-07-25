@@ -2,7 +2,7 @@
 
 CEJ centro de estudios judaicos
 Nuestro objetivo es acompañar a toda aquella persona de la colectividad con ganas de aprender y crecer espiritualmente.
-Universitarios y adolecentes, de ambos sexos,  podran encontrar aqui respuestas a sus preguntas, informacion, entretenimiento, actividades , cursos y much má.  
+Universitarios y adultos, de ambos sexos,  podran encontrar aqui respuestas a sus preguntas, informacion, entretenimiento, actividades , cursos y mucho más.  
 
 CEJ web, un centro de valores, al alcance de todos, en cualquier parte del mundo.   
   
