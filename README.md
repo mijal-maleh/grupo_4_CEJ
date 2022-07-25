@@ -17,7 +17,7 @@ Caro Lustron (28) soy lic en recursos humanos, pero trabajo en una empresa de Ma
 
 Nos inspiramos con..
 
-https://www.chabadyp.com/     Estructura general
+https://www.chabadyp.com/     Estructura general y version para cel.
 
 https://www.coderhouse.com/   Scroller de cursos y opcion de ver más 
 
