@@ -1,12 +1,17 @@
 # grupo_4_JABA
 
 JABA Judaismo Activo en Buenos Aires.
+
 Nuestro objetivo es difundir enseñanzas judaicas, ofreciendo variadas propuestas con el fin de atraer e influenciar en todo aspecto de la vida diaria. 
+
 Apuntando a un publico adulto/uniersitario, hombres y mujeres, adaptamos talleres, cursos, actividades, informacion de interes gral, y material de lectura para adquirir más conocimientos.
+
 Atravez de esta web, será posible registrarse y así apuntarse para participar de las diferentes propuestas dadas. De esta manera cada usuario podrá tener en su perfil, un registro de las actividades a las cuales desea concurrir, como así también la opción de guardar los artículos de mayor interés , a los cuáles podrá acceder en cualquier momento, de manera rápida y sencilla.
+
 (A su vez, contamos con propuestas pagas, las cuales, al momento de subscribirse, tendran la opcion de abonarlas en el momento.)
-Semanalmente, en el home,contaremos con el horario de encendio de velas correspondiente a ese viernes. //( Antes de comenzar el día de descanso sabático, debemos encender dos velas y recitar una bendición, esto se hace siempre 18 minutos antes de la puesta del sol correspondiente a aquel Viernes).
-En el home podremos ver unabreve descripcion de la fundación JABA ,( about-us), y una botonera que nos permitirá acceder a los distintos rubros de cursos y actividades. Estos, estarán expuestos en formato scroller, con una breve descrípcion de cada uno. 
+Semanalmente, en el home,contaremos con el horario de encendido de velas correspondiente a ese viernes. //( Antes de comenzar el día de descanso sabático, debemos encender dos velas y recitar una bendición, esto se hace siempre 18 minutos antes de la puesta del sol correspondiente a aquel Viernes).
+
+En el home podremos ver una breve descripcion de la fundación JABA ,( about-us), y una botonera que nos permitirá acceder a los distintos rubros de cursos y actividades. Estos, estarán expuestos en formato scroller, con una breve descrípcion de cada uno. 
 
   
 Nosotras, 3 colaboradoras dispuestas a acrecer.. 
