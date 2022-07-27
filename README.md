@@ -38,4 +38,3 @@ https://es-la.facebook.com/   Formulario de registro
 https://www.chabad.org/       Gama de colores
 
 https://jabad.org.ar/         Gama de colores
-![formulario registro](https://user-images.githubusercontent.com/109223366/181169689-62839e91-7c5a-422a-8e29-93d8fa1c475e.jpg)
