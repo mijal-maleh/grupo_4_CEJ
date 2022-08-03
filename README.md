@@ -38,7 +38,3 @@ https://laregaleria.com.ar/   Gama de colores
 
 
 
-Codigos de colores:
-  Amarillo: #fed522
-  Gris: #a4a5a7
-  Bordo: #894243
