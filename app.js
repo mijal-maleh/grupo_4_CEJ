@@ -33,4 +33,18 @@ app.get('/register',(req,res)=>{
     res.sendFile (rutaCompleta)
 })
 
+app.get('/error404',(req,res)=>{
+    const rutaCompleta = path.join (__dirname,'/views/error.html');
+    res.sendFile (rutaCompleta)
+})
+
+app.get('/profile',(req,res)=>{
+    const rutaCompleta = path.join (__dirname,'/views/profile.html');
+    res.sendFile (rutaCompleta)
+})
+
+app.get('/productList',(req,res)=>{
+    const rutaCompleta = path.join (__dirname,'/views/productList.html');
+    res.sendFile (rutaCompleta)
+})
 
