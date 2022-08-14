@@ -37,4 +37,7 @@ https://es-la.facebook.com/   Formulario de registro
 https://laregaleria.com.ar/   Gama de colores
 
 
+LINK DE TRELLO
+https://trello.com/webfullstack2022proyectointegrador
+
 
