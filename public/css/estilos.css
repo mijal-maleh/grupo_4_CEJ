@@ -9,6 +9,21 @@ Questrial
 
 font-family: 'Questrial', sans-serif;
 
-agregar normalize.css
+agregar normalize.css?
 
 agregar https://fontawesome.com/icons?d=gallery&m=free
+
+/*ESTILOS DE LA PAGINA DE LOGIN*/
+
+/*ESTILOS DEL HEADER*/
+header {
+    display: flex;
+}
+.logo{
+    width: 30%;
+    justify-items: center;
+}
+
+.errarVentana{
+
+}
