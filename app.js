@@ -6,7 +6,8 @@ app.listen(3001,()=>{
     console.log("B'H JAVA en 3001");
 })
 
-app.use(express.static('public'));
+const rutaCompleta = path.join (__dirname,'/public')
+app.use(express.static(rutaCompleta));
 
 app.get('/',(req,res)=>{
     const rutaCompleta = path.join (__dirname,'/views/index.html');

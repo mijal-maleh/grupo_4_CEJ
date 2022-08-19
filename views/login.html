@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
     <title>Ingreso</title>
 </head>
-<body>
-    B'H HOLA MUNDO
+
+<body class="tipografia">
+    <header class="encabezado">
+        <img src="/images/logotransp.png" alt="logo JABA" class="logo">
+        <button type="button" class="cerrarVentana">x</button>
+        <h2 class="titulo">INGRESO A JABA</h2>
+    </header>
+    <main class="principal">
+        <div class="formu1">
+            <label for="usuario">USUARIO O CORREO ELECTRONICO</label>
+            <br><br>
+            <input type="text" name="usuario" id="usuario" class="celda">
+        </div>
+        <div class="formu2">
+            <label for="clave">CONTRASEÑA</label>
+            <br><br>
+            <input type="text" name="usuario" id="usuario" class="celda"> 
+        </div>
+        <div class="olvido">
+            <a href="#" class="olvidolink">¿Olvidaste la contraseña?</a>
+        </div>
+        <div class="ingresar">
+            <button type="submit" class="boton-ingresar">INGRESAR</button>
+        </div>
+        <div class="recordar">
+            <input type="checkbox" name="recordar" id="recordar">
+            <label for="recordar">RECORDAR MIS DATOS</label>
+        </div>
+    </main>
+    <footer>
+        <label for="registro" class="registro">¿AUN NO ESTAS REGISTRADO?</label>
+        <br><br>
+        <a href="#" class="registro-link">CREA TU CUENTA AQUI</a>
+    </footer>
 </body>
+
 </html>
