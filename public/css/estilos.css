@@ -22,6 +22,7 @@ body{
 /*ESTILOS DEL HEADER*/
 .encabezado {
     margin: auto;
+    
 }
 
 .cerrarVentana {
@@ -50,6 +51,7 @@ body{
     padding: 25px 15px;
     font-size: small;
     margin-bottom: 25px;
+    box-shadow: 0px 0px 10px  #a4a5a7;
 }
 .formu1 {
    padding-bottom: 25px;
@@ -96,6 +98,7 @@ margin: auto;
 padding:  15px;
 font-size: small;
 text-align: center;
+box-shadow: 0px 0px 10px  #a4a5a7;
 }
 .registro-link{
     display: block;
