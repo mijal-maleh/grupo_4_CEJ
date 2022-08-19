@@ -1,13 +1,6 @@
 /*Codigos de colores: Amarillo: #fed522 Gris: #a4a5a7 Bordo: #894243
+background-color: rgba(77,77,77,0.03);
 
-/*tipografias
-Questrial
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
-
-font-family: 'Questrial', sans-serif;
 
 agregar normalize.css?
 
@@ -15,15 +8,102 @@ agregar https://fontawesome.com/icons?d=gallery&m=free
 
 /*ESTILOS DE LA PAGINA DE LOGIN*/
 
+/*ESTILOS DEL BODY*/
+* {
+    font-family: 'Questrial', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(77,77,77,0.03);
+    color: #4b4b4b;
+}
+
 /*ESTILOS DEL HEADER*/
-header {
-    display: flex;
-}
-.logo{
-    width: 30%;
-    justify-items: center;
+.encabezado {
+    margin: auto;
 }
 
-.errarVentana{
+.cerrarVentana {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    border: 1px solid #a4a5a7 ;
+}
 
+.logo {
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+.titulo {
+   text-align: center;
+   margin-top: auto;
+
+}
+/*ESTILOS DEL MAIN*/
+.principal {
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+    padding: 25px 15px;
+    font-size: small;
+    margin-bottom: 25px;
+}
+.formu1 {
+   padding-bottom: 25px;
+   width: 100%;
+   display: block;
+}
+.celda{
+    width: 100%;
+    display: block;
+}
+.formu2 {
+    padding-bottom: 8px;
+    width: 100%;
+    display: block;
+ }
+.olvido{
+   text-align: right;
+   padding-bottom: 17px;
+}
+.olvidolink{
+    color: #fed522 !important;
+}
+.ingresar{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 25px;
+}
+.boton-ingresar{
+    background-color: #fed522;
+    border: none;
+    padding: 15px;
+    width: 50vw;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/*ESTILOS DEL FOOTER*/
+footer {
+margin-top: 10px;
+background-color: #ffffff;
+width: 90%;
+margin: auto;
+padding:  15px;
+font-size: small;
+text-align: center;
+}
+.registro-link{
+    display: block;
+    background-color: #fed522;
+    border: none;
+    padding: 15px;
+    width: 50vw;
+    color: #ffffff;
+    font-weight: bold;
+    margin: auto;
 }
