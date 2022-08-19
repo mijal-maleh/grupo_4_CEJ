@@ -7,6 +7,7 @@ app.listen(3001,()=>{
 })
 
 const rutaCompleta = path.join (__dirname,'/public')
+
 app.use(express.static(rutaCompleta));
 
 app.get('/',(req,res)=>{
