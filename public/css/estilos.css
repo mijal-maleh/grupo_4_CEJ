@@ -20,11 +20,17 @@ body{
 }
 
 /*ESTILOS DEL HEADER*/
+.bh{
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    color: #4b4b4b;
+}
+
 .encabezado {
     margin: auto;
     
 }
-
 .cerrarVentana {
     position: fixed;
     top: 12px;

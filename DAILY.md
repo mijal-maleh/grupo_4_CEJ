@@ -22,4 +22,11 @@ Malka-consigue la app buscada edita y sube el logo nuevo.
         correccion de rutas public.
 
 conclusiones: Avanzando poco a poco. Poner enfasis en los archivos solicitados.
-                
+
+19/8
+Malka 
+QUE HICE AYER? la pagina del login
+CON QUE DESAFIO ME ENFRENTE? me faltaban algunos colores que no habiamos visto en el 1er sprint
+QUE VOY A HACER HOY? hasta el lunes no voy a poder avanzar mucho porque hay otra entrega, pero Di-s mediante quiero mirar las correcciones que me pasaron para hacerle a la pagina de login asi ya queda terminada
+
+CONCLUSIONES Vamos atrasadas pero al menos ya tenemos una pagina hecha y quedo muy linda.         
