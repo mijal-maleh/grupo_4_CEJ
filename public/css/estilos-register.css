@@ -131,3 +131,7 @@ margin-bottom: 50px ;
 .registro-link:hover {
     background-color: #fead22;
 }
+
+.botones{
+    display: flex;
+}
