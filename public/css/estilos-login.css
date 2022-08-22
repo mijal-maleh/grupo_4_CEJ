@@ -1,0 +1,133 @@
+/*Codigos de colores: Amarillo: #fed522 Gris: #a4a5a7 Bordo: #894243
+background-color: rgba(77,77,77,0.03);
+
+
+agregar normalize.css?
+
+agregar https://fontawesome.com/icons?d=gallery&m=free
+
+/*ESTILOS DE LA PAGINA DE LOGIN*/
+
+/*ESTILOS DEL BODY*/
+* {
+    font-family: 'Questrial', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgba(77,77,77,0.03);
+    color: #4b4b4b;
+}
+
+/*ESTILOS DEL HEADER*/
+.bh{
+    position: fixed;
+    top: 3px;
+    left: 12px;
+    color: #4b4b4b;
+}
+
+.encabezado {
+    margin: auto;
+    
+}
+.cerrarVentana {
+    position: fixed;
+    top: 12px;
+    right: 12px;
+    border: 1px solid #a4a5a7 ;
+}
+
+.logo {
+    width: 35%;
+    display: block;
+    margin: auto;
+}
+
+.titulo {
+   text-align: center;
+   margin-top: auto;
+
+}
+/*ESTILOS DEL MAIN*/
+.principal {
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+    padding: 25px 15px;
+    font-size: small;
+    margin-bottom: 25px;
+    box-shadow: 0px 0px 10px  #a4a5a7;
+    border-radius: 5px;
+}
+.formu1 {
+   padding-bottom: 25px;
+   width: 100%;
+   display: block;
+   border-radius: 5px;
+}
+.celda{
+    width: 100%;
+    display: block;
+}
+.formu2 {
+    padding-bottom: 8px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
+ }
+.olvido{
+   text-align: right;
+   padding-bottom: 17px;
+}
+.olvidolink{
+    color: #fed522 !important;
+}
+.ingresar{
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 25px;
+    
+}
+.boton-ingresar{
+    background-color: #fed522;
+    border: none;
+    padding: 15px;
+    width: 50vw;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.boton-ingresar:hover {
+    background-color: #fead22;
+}
+
+/*ESTILOS DEL FOOTER*/
+.footer-login {
+margin-top: 10px;
+background-color: #ffffff;
+width: 90%;
+margin: auto;
+padding:  15px;
+font-size: small;
+text-align: center;
+box-shadow: 0px 0px 10px  #a4a5a7;
+margin-bottom: 50px ;
+}
+.registro-link{
+    display: block;
+    background-color: #fed522;
+    border: none;
+    padding: 15px;
+    width: 50vw;
+    color: #ffffff;
+    font-weight: bold;
+    margin: auto;
+    border-radius: 5px;
+    text-decoration: none ;
+}
+.registro-link:hover {
+    background-color: #fead22;
+}

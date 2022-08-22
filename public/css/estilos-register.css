@@ -22,8 +22,8 @@ body{
 /*ESTILOS DEL HEADER*/
 .bh{
     position: fixed;
-    top: 12px;
-    left: 12px;
+    top: 3px;
+    left: 7px;
     color: #4b4b4b;
 }
 
@@ -58,11 +58,13 @@ body{
     font-size: small;
     margin-bottom: 25px;
     box-shadow: 0px 0px 10px  #a4a5a7;
+    border-radius: 5px;
 }
 .formu1 {
    padding-bottom: 25px;
    width: 100%;
    display: block;
+   border-radius: 5px;
 }
 .celda{
     width: 100%;
@@ -72,6 +74,7 @@ body{
     padding-bottom: 8px;
     width: 100%;
     display: block;
+    border-radius: 5px;
  }
 .olvido{
    text-align: right;
@@ -85,6 +88,7 @@ body{
     display: block;
     text-align: center;
     padding-bottom: 25px;
+    
 }
 .boton-ingresar{
     background-color: #fed522;
@@ -93,10 +97,15 @@ body{
     width: 50vw;
     color: #ffffff;
     font-weight: bold;
+    border-radius: 5px;
+}
+
+.boton-ingresar:hover {
+    background-color: #fead22;
 }
 
 /*ESTILOS DEL FOOTER*/
-footer {
+.footer-register {
 margin-top: 10px;
 background-color: #ffffff;
 width: 90%;
@@ -105,6 +114,7 @@ padding:  15px;
 font-size: small;
 text-align: center;
 box-shadow: 0px 0px 10px  #a4a5a7;
+margin-bottom: 50px ;
 }
 .registro-link{
     display: block;
@@ -115,4 +125,9 @@ box-shadow: 0px 0px 10px  #a4a5a7;
     color: #ffffff;
     font-weight: bold;
     margin: auto;
+    border-radius: 5px;
+    text-decoration: none ;
+}
+.registro-link:hover {
+    background-color: #fead22;
 }

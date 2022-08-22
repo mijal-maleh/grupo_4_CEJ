@@ -1,9 +1,10 @@
 const express = require ('express');
 const app = express();
 const path = require ('path');
+const dotenv = require ('dotenv').config();
 
-app.listen(3001,()=>{
-    console.log("B'H JAVA en 3001");
+app.listen(process.env.PORT || 3001,()=>{
+    console.log("B'H JAVA en " +process.env.PORT);
 })
 
 const rutaCompleta = path.join (__dirname,'/public')
