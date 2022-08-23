@@ -36,7 +36,7 @@ app.get('/register',(req,res)=>{
     res.sendFile (rutaCompleta)
 })
 
-app.get('/error404',(req,res)=>{
+app.get('/error',(req,res)=>{
     const rutaCompleta = path.join (__dirname,'/views/error.html');
     res.sendFile (rutaCompleta)
 })
