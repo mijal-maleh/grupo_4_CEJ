@@ -1,16 +1,47 @@
-header{
-    height:15%;
-    background-color:#d3d3d3 ;
-    width:100%;
-    border-bottom: 2px #4d4d4d;
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
 }
-p{
+
+/*estilos home*/
+
+/*HEADER*/
+
+header{
+    background-color:#d3d3d3; 
+    /*color:#ebebeb;*/
+    height:100px;
+    width:100%;
+    border-bottom: 2px #4d4d4d solid;
+    position: relative;
+}
+p{  top: 3px;
+    left: 12px;
+    color: #4b4b4b;
     font-size: 10px;
+    font-family:questrial;
 }
 .logo{
-    width:30%;
-    margin-top: 5px;
-    display: inline-flex;
+    width:60%;
+    display:block;
     flex-direction:row;
-    
+    position:absolute;
+    top:0;
+    margin: 0%;
+    z-index: 10;
+}
+.iconos{
+    position: absolute;
+    /*left:90%;*/
+  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content:flex-start;
+    border: red solid 20px;
+}
+
+.barrabusqueda{
+    display: none;
 }
