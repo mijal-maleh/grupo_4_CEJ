@@ -1,7 +1,8 @@
 header{
     height:15%;
-    background-color:#a4a5a7 ;
+    background-color:#d3d3d3 ;
     width:100%;
+    border-bottom: 2px #4d4d4d;
 }
 p{
     font-size: 10px;
@@ -9,4 +10,7 @@ p{
 .logo{
     width:30%;
     margin-top: 5px;
+    display: inline-flex;
+    flex-direction:row;
+    
 }
