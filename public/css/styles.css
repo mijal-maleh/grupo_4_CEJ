@@ -9,11 +9,14 @@
 /*HEADER*/
 
 header{
-    background-color:#d3d3d3; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#a4a5a7;
     /*color:#ebebeb;*/
     height:100px;
     width:100%;
-    border-bottom: 2px #4d4d4d solid;
+    border-bottom: 4px #fed522 solid;
     position: relative;
 }
 p{  top: 3px;
@@ -23,25 +26,31 @@ p{  top: 3px;
     font-family:questrial;
 }
 .logo{
-    width:60%;
-    display:block;
+    width:200px;
+    height: 200px;
+    display:flex;
     flex-direction:row;
     position:absolute;
-    top:0;
+    top: -10px;
     margin: 0%;
     z-index: 10;
-}
-.iconos{
-    position: absolute;
-    /*left:90%;*/
-  
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content:flex-start;
-    border: red solid 20px;
 }
 
 .barrabusqueda{
     display: none;
+}
+
+.iconos{
+    display: flex;
+    justify-content: space-around;
+    width: 200px;
+    font-size: 30px;
+    
+}
+.iconos i{ 
+color:#fed522;
+ }
+ 
+.iconos:hover i{
+    color:#d3d3d3;
 }
