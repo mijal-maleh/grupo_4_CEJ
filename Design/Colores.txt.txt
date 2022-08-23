@@ -4,6 +4,8 @@ Gris intermedio: #a4a5a7
 Bordo: #894243
 Gris clarito fondo: rgba(77,77,77,0.03)
 Gris oscuro: #4d4d4d
+gris del footer: rgba(77,77,77,0.8)
+naranja: #f3ba0c
         
 
 letra clara sobre gris oscuro y fondo de formularios: #ffffff

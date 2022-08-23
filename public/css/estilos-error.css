@@ -1,0 +1,110 @@
+*{
+    font-family: 'Questrial', sans-serif;
+}
+.header{
+    background-color: #4d4d4d;
+    height: 10vh;
+}
+
+.oy-vey-man{
+    width: 50%;
+    text-align: right;
+    border: #894243;
+    border-style:ridge;
+
+}
+@keyframes traslado{
+    0% {
+        justify-content: right;
+    }
+    100% {
+        justify-content: left;
+    }
+}
+.oy-vey-woman{
+    width: 50%;
+    border: #894243;
+    border-style:ridge;
+}
+.caja-imagen1{
+    background-color: #894243;
+    display: flex;
+    animation-name: traslado;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+
+@keyframes traslado2{
+    0% {
+        justify-content: left;
+    }
+    100% {
+        justify-content: right;
+    }
+}
+.caja-imagen2{
+    background-color: #894243;
+    display: flex;
+    justify-content: right;
+    animation-name: traslado2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-fill-mode: both;
+}
+.caja-texto{
+    background-color: rgba(77,77,77,0.03)
+}
+
+main{
+    background-color: #fed522;
+
+}
+h1{
+   background-color:  #fed522;
+   margin: auto;
+   text-align: center;
+   padding: 30px 0;
+}
+
+p{
+    background-color:  #fed522;
+    margin: auto;
+   text-align: center;
+  font-style: italic;
+  padding-bottom: 30px;
+ }
+
+
+.footer{
+    background-color: rgba(77,77,77,0.8);
+    height: 10vh;
+}
+
+@media (min-width:480px){
+    .oy-vey-woman{
+        width: 30%;
+    }
+    .oy-vey-man{
+        width: 30%;
+    }
+}
+
+@media (min-width:768px){
+    .oy-vey-woman{
+        width: 25%;
+    }
+    .oy-vey-man{
+        width: 20%;
+    }
+}
+@media (min-width:1280px){
+    .oy-vey-woman{
+        width: 15%;
+    }
+    .oy-vey-man{
+        width: 15%;
+    }
+}
