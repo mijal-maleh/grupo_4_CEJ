@@ -11,7 +11,7 @@
 header{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /*align-items: center;*/
     background-color:#a4a5a7;
     /*color:#ebebeb;*/
     height:100px;
@@ -43,6 +43,7 @@ p{  top: 3px;
 .iconos{
     display: flex;
     justify-content: space-around;
+    align-items: flex-end;
     width: 200px;
     font-size: 30px;
     
@@ -53,4 +54,26 @@ color:#fed522;
  
 .iconos:hover i{
     color:#d3d3d3;
+}
+
+/*BODY*/
+
+body{
+    background-color:rgba(77,77,77,0.03) ;
+}
+
+/*MAIN*/
+
+.categorias a{
+    text-decoration:none;
+    /*margin-left:10px;*/
+    border-left:solid #fed522 5px ;
+    padding: 10px;
+}
+.categorias{
+    display: flex;
+    justify-content: flex-end;
+    /*padding: 20px;*/
+    background-color: #d3d3d3;
+    margin-top: 8px;
 }
