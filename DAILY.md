@@ -3,11 +3,25 @@
  QUE VOY A HACER HOY?
  CONCLUSIONES
 
+23/08 martes
+mijal
+luego de haber entregado proyecto mercado liebre, se libera tiempo para dedicar a proyecto grupal. Finalizo header gral, queda retoques de colores para chekear durante el proceso.
+nuevamente me dificulto el ingreso al nodemon, finalmente y recien muy tarde de noche junto con la ayuda de mi compa pudimos resolverlo y comenzar a ver el navegador. Por otro lado, mi baby no se sentia bien por lo que estuvo molesto todo el dia y me exigio mas atencion.
+hoy espero el dia este mas tranquilo y continuar lo maximo posible.
+conclusiones:
+con la ayuda mutua, y la conversacion, es mas facil encontrar soluciones a los conflictos.
+
+
+
 22/8 lunes
 Malka
  QUE HICE AYER? Termine las correcciones que quedaron pendientes y revise el wireframe que subio Mijal al trello
  CON QUE DESAFIO ME ENFRENTE? Falta de tiempo por otro proyecto paralelo
  QUE VOY A HACER HOY? El objetivo para hoy es terminar de bocetar todas las paginas osea mas bien el HTML y mañana aplicarle los detalles de estilo
+ Mijal 
+ comenzando a trabajar en el header del home. 
+ Al tener otro trabajo que entregar al mismo tiempo, fue dificil poder dedicar tiempo a ambos.
+ Por otro lado, tuve varias veces dificultades para iniciar nodemon en este proyecto.
 
  CONCLUSIONES
  Al haber trabajado en el proyecto de Mercado Liebre es una gran ayuda para saber como encarar este proyecto.
