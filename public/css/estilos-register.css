@@ -52,7 +52,7 @@ body{
 /*ESTILOS DEL MAIN*/
 .principal {
     background-color: #ffffff;
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 25px 15px;
     font-size: small;
@@ -69,6 +69,7 @@ body{
 .celda{
     width: 100%;
     display: block;
+    padding: 5px
 }
 .formu2 {
     padding-bottom: 8px;
@@ -87,28 +88,46 @@ body{
     width: 100%;
     display: block;
     text-align: center;
-    padding-bottom: 25px;
+    padding: 25px 0;
     
 }
 .boton-ingresar{
     background-color: #fed522;
     border: none;
-    padding: 15px;
-    width: 50vw;
+    padding: 10px;
     color: #ffffff;
     font-weight: bold;
     border-radius: 5px;
+    width: 90%;
 }
-
 .boton-ingresar:hover {
     background-color: #fead22;
+}
+
+.boton-reset{
+    background-color: #fed522;
+    border: none;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 90% ;
+}
+
+.boton-reset:hover {
+    background-color: #fead22;
+}
+.botones{
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 
 /*ESTILOS DEL FOOTER*/
 .footer-register {
 margin-top: 10px;
 background-color: #ffffff;
-width: 90%;
+width: 80%;
 margin: auto;
 padding:  15px;
 font-size: small;
@@ -121,7 +140,7 @@ margin-bottom: 50px ;
     background-color: #fed522;
     border: none;
     padding: 15px;
-    width: 50vw;
+    width: 50%;
     color: #ffffff;
     font-weight: bold;
     margin: auto;
@@ -132,6 +151,19 @@ margin-bottom: 50px ;
     background-color: #fead22;
 }
 
-.botones{
-    display: flex;
+@media (min-width:769px) {
+    .principal {
+        width: 50%;
+    }
+    .footer-register {
+        width: 50%;
+    }
+}
+@media (min-width:1280px) {
+    .principal {
+        width: 30%;
+    }
+    .footer-register {
+        width: 30%;
+    }
 }
