@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -8,72 +8,239 @@
 
 /*HEADER*/
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     /*align-items: center;*/
-    background-color:#a4a5a7;
+    background-color: #a4a5a7;
     /*color:#ebebeb;*/
-    height:100px;
-    width:100%;
+    height: 100px;
+    width: 100%;
     border-bottom: 4px #fed522 solid;
     position: relative;
 }
-p{  top: 3px;
+
+p {
+    top: 3px;
     left: 12px;
     color: #4b4b4b;
     font-size: 10px;
-    font-family:questrial;
-}
-.logo{
-    width:200px;
-    height: 200px;
-    display:flex;
-    flex-direction:row;
-    position:absolute;
-    top: -10px;
-    margin: 0%;
-    z-index: 10;
+    font-family: questrial;
 }
 
-.barrabusqueda{
+.logo {
+    width: 170px;
+    height: 170px;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin: 0%;
+    z-index: 0;
+    /*display:none;*/
+}
+
+.barrabusqueda {
     display: none;
 }
 
-.iconos{
+.iconos {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     width: 200px;
     font-size: 30px;
-    
 }
-.iconos i{ 
-color:#fed522;
- }
- 
-.iconos:hover i{
-    color:#d3d3d3;
+
+.iconos i {
+    color: #d3d3d3;
+}
+
+.iconos:hover i {
+    color: #fed522;
 }
 
 /*BODY*/
 
-body{
-    background-color:rgba(77,77,77,0.03) ;
+body {
+    background-color: rgba(77, 77, 77, 0.03);
 }
 
 /*MAIN*/
 
-.categorias a{
-    text-decoration:none;
+.categorias a {
+    text-decoration: none;
     /*margin-left:10px;*/
-    border-left:solid #fed522 5px ;
+    border-left: solid #fed522 5px;
     padding: 10px;
 }
-.categorias{
+
+.categorias {
     display: flex;
     justify-content: flex-end;
     /*padding: 20px;*/
     background-color: #d3d3d3;
     margin-top: 8px;
+    display: none;
+}
+
+  .menu-cel i {
+    color: #fed522;
+    background-color: #d3d3d3;
+    font-size: 30px;
+    border: #a4a5a7 solid 1px;
+    padding:10px;
+    margin-top: 8px;
+    display: inline-flex;
+    justify-content:right;
+}
+
+.datos-semanales {
+    position: relative;
+    display: inline-flex;
+    flex-direction:column;
+    justify-content:flex-start;
+    text-align: flex-start;
+    margin-left:0px;
+    margin-top: 40px;
+    
+}
+
+.datos-semanales img {
+    font-size: xx-small;
+    height: 40px;
+    position: absolute;
+    opacity:50%;
+    top: 20px;
+    left: 35px;
+}
+ .semana p, h4{
+    display: flex;
+    flex-wrap: wrap;
+    text-align:center;
+    z-index: 5;
+    color:#4d4d4d;
+    right:40px;
+    top:40px ;
+}
+
+/*SLIDER*/
+
+
+.slider {
+    width: 80%;
+    overflow: hidden;
+    height: 150px;
+    margin-top: 10px;
+    border: #a4a5a7 solid 2px;
+    /*border-radius: 70%;*/
+    justify-content: center;
+    position: relative;
+    top: 60px;
+    left:10% ;
+    margin-right:10px;
+}
+
+.slider ul {
+    width: 500%;
+    display: flex;
+    animation: cambio, alternate 20s infinite alternate linear;
+    /*transform*/
+}
+
+.slider li {
+    width: 50%;
+    height: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.slider img {
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    align-items: stretchs;
+    /*padding-right: 10px;*/
+    margin-bottom: 10px;
+}
+
+.slider ul li h4,
+p {
+    text-align: center;
+
+}
+
+.slider li .txt {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    margin-top: 3px;
+    align-items: center;
+    justify-content:center;
+    position: relative;
+    left: 20px;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    15% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: -100;
+    }
+
+    35% {
+        margin-left: -100;
+    }
+
+    40% {
+        margin-left: -200;
+    }
+
+    55% {
+        margin-left: -200;
+    }
+
+    60% {
+        margin-left: -300;
+    }
+
+    75% {
+        margin-left: -300;
+    }
+
+    80% {
+        margin-left: -400;
+    }
+
+    100% {
+        margin-left: -400;
+    }
+
+    ;
+}
+
+@media (min-width:480px){
+    
+    .logo{ 
+    width: 200px;
+    height: 200px;
+    top:-10px;
+    }
+    .categorias{
+        display:flex;
+    }
+.slider{
+    height: 400px;
+}
+.menu-cel i{
+    display: none;
+}
 }
