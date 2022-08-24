@@ -10,6 +10,7 @@ nuevamente me dificulto el ingreso al nodemon, finalmente y recien muy tarde de 
 hoy espero el dia este mas tranquilo y continuar lo maximo posible.
 conclusiones:
 con la ayuda mutua, y la conversacion, es mas facil encontrar soluciones a los conflictos.
+Tomamos la decision de hacer la retro del primer sprint junto con la del segundo. 
 
 
 
