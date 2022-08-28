@@ -13,13 +13,15 @@ A su vez, contamos con propuestas pagas, las cuales, al momento de subscribirse,
 En el home podremos ver una breve descripción de JABA ,( about-us), y una botonera que nos permitirá acceder a los distintos rubros de cursos y actividades. Estos, estarán expuestos en formato scroller, con una breve descripción de cada uno. 
 
   
-Nosotras, 3 colaboradoras dispuestas a crecer...
+Nosotras, 2 colaboradoras dispuestas a crecer...
 
-Caro Lustron (28) Lic. en recursos humanos, pero actualmente trabajo en una empresa de Marketing. Siempre en constante crecimiento y con ganas de aprender cosas nuevas.
 
 Mijal Birman (34) Mamá, dedicada a la enseñanza y transmisión de valores judaicos, aprovechando los beneficios del mundo moderno cambiante para optimizar mi función.
 
 Malka Jacobo (43) Mamá, emprendedora y estudiante entusiasta.
+
+//participó solamente en el primer sprint de creacion de los wireframes:
+Caro Lustron (28) Lic. en recursos humanos, pero actualmente trabajo en una empresa de Marketing. Siempre en constante crecimiento y con ganas de aprender cosas nuevas.
 
 
 Nos inspiramos en..
