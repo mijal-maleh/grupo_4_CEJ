@@ -3,8 +3,15 @@
  QUE VOY A HACER HOY?
  CONCLUSIONES
 
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 235f1c877f9b8b3bc10df14d155f288f0a8bd00b
  
 24/08 miercoles
+mijal
 continuo trabajando sobre el home. investigo como hacer un slider para nuestra pagina, y trato de ponerlo en marcha. Trabajo mobil firts.
 nos ponemos de acuerdo con malka para trabajar paralelamente y prolijo combinando headers y footers.
 tuve un poco de contratiempos al tener que buscar info para ver como llevar ala practica  nuetsra idea, y luego que quede bien y prolija en la pagina.
