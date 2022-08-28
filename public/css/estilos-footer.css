@@ -5,19 +5,21 @@
     font-family:questrial;
 }
 
-
-
-
 footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color:#a4a5a7;
-    height:100px;
+    height:50px;
     width:100%;
     border-top: 4px #fed522 solid;
     font-size: 30px;
 }
+
+.logo-footer{
+    width: 33
+}
+
 
 .footer-bar-left{
     width: 50%;
@@ -31,6 +33,11 @@ footer{
     padding-right: 5px;
     display: flex;
     justify-content: end;
+}
+
+.iconos-redes-p{
+display: none;
+color: #4d4d4d;
 }
 
 i{
@@ -69,4 +76,38 @@ i:hover {
      padding: 2px;
      margin: 2px;
      font-size: 12px;
+}
+
+
+/*MEDIA QUERIES DE TABLET*/
+@media (min-width : 361px ){
+
+footer{
+    height:100px;
+    justify-content: stretch;
+    
+}
+.iconos-redes-p{
+    display: flex;
+    flex-direction: column;
+    background-color: #4d4d4d;
+    color: #fed522;
+    justify-content: center;
+
+}
+.social-section{
+    width: 50%;
+    hight: 50%;
+    border: solid red 2px ;
+}
+.footer-bar-rigth{
+    height: 100%;
+   
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.social-section{
+    display: flex;
+    flex-wrap: nowrap;
+}
 }

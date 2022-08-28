@@ -23,7 +23,7 @@ body{
 .bh{
     position: fixed;
     top: 3px;
-    left: 7px;
+    left: 12px;
     color: #4b4b4b;
 }
 
@@ -43,9 +43,12 @@ body{
 .cerrarVentana:hover {
     background-color: #fead22;
 }
+.logo-footer {
+    display: inline-block;
+}
 
 .logo {
-    width: 35%;
+    width: 100%;
     display: block;
     margin: auto;
 }
@@ -58,7 +61,7 @@ body{
 /*ESTILOS DEL MAIN*/
 .principal {
     background-color: #ffffff;
-    width: 80%;
+    width: 90%;
     margin: auto;
     padding: 25px 15px;
     font-size: small;
@@ -75,7 +78,6 @@ body{
 .celda{
     width: 100%;
     display: block;
-    padding: 5px
 }
 .formu2 {
     padding-bottom: 8px;
@@ -94,46 +96,28 @@ body{
     width: 100%;
     display: block;
     text-align: center;
-    padding: 25px 0;
+    padding-bottom: 25px;
     
 }
 .boton-ingresar{
     background-color: #fed522;
     border: none;
-    padding: 10px;
+    padding: 15px;
+    width: 50vw;
     color: #ffffff;
     font-weight: bold;
     border-radius: 5px;
-    width: 90%;
 }
+
 .boton-ingresar:hover {
     background-color: #fead22;
 }
 
-.boton-reset{
-    background-color: #fed522;
-    border: none;
-    padding: 10px 15px;
-    color: #ffffff;
-    font-weight: bold;
-    border-radius: 5px;
-    width: 90% ;
-}
-
-.boton-reset:hover {
-    background-color: #fead22;
-}
-.botones{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
 /*ESTILOS DEL FOOTER*/
-.footer-register {
+.footer-login {
 margin-top: 10px;
 background-color: #ffffff;
-width: 80%;
+width: 90%;
 margin: auto;
 padding:  15px;
 font-size: small;
@@ -146,7 +130,7 @@ margin-bottom: 50px ;
     background-color: #fed522;
     border: none;
     padding: 15px;
-    width: 50%;
+    width: 50vw;
     color: #ffffff;
     font-weight: bold;
     margin: auto;
@@ -155,21 +139,4 @@ margin-bottom: 50px ;
 }
 .registro-link:hover {
     background-color: #fead22;
-}
-
-@media (min-width:769px) {
-    .principal {
-        width: 50%;
-    }
-    .footer-register {
-        width: 50%;
-    }
-}
-@media (min-width:1280px) {
-    .principal {
-        width: 30%;
-    }
-    .footer-register {
-        width: 30%;
-    }
 }

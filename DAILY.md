@@ -2,6 +2,8 @@
  CON QUE DESAFIO ME ENFRENTE?
  QUE VOY A HACER HOY?
  CONCLUSIONES
+
+ 
 24/08 miercoles
 continuo trabajando sobre el home. investigo como hacer un slider para nuestra pagina, y trato de ponerlo en marcha. Trabajo mobil firts.
 nos ponemos de acuerdo con malka para trabajar paralelamente y prolijo combinando headers y footers.
@@ -9,6 +11,13 @@ tuve un poco de contratiempos al tener que buscar info para ver como llevar ala 
 el slider esta armado pero no se ejecuta.
  como siempre mi mayor conflicto es ordenar los tiempos para trabajr mas organizada.
 bh hoy queremos terminar paginas home mobil first, y avanza en alguna otra.
+
+Malka
+ QUE HICE AYER? pude terminar una primer version del footer mobile
+ CON QUE DESAFIO ME ENFRENTE? los iconos se veian con poco contraste
+ QUE VOY A HACER HOY? seguir con el footer, adaptar los iconos para que se vean bien y empezar con la version laptop
+ CONCLUSIONES necesitamos descansar bien para poder avanzar mejor en el proyecto. fueron dias intensos. 
+
 
 23/08 martes
 mijal
@@ -19,6 +28,11 @@ conclusiones:
 con la ayuda mutua, y la conversacion, es mas facil encontrar soluciones a los conflictos.
 Tomamos la decision de hacer la retro del primer sprint junto con la del segundo. 
 
+Malka: 
+ QUE HICE AYER? la pagina de error
+ CON QUE DESAFIO ME ENFRENTE? no pude lograr lo que me proponia pero igual el resultado esta bien. 
+ QUE VOY A HACER HOY? el footer
+ CONCLUSIONES. nos dimos cuenta que es mejor ir de a partes pero enfocar en una pagina, en vez de bocetar la estructura basica de todas y despues volver a aplicar estilos. 
 
 
 22/8 lunes

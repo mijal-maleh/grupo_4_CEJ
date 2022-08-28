@@ -3,7 +3,7 @@ const app = express();
 const path = require ('path');
 const dotenv = require ('dotenv').config();
 
-app.listen(process.env.PORT || 3001,()=>{
+app.listen(process.env.PORT || 3001,'0.0.0.0',()=>{
     console.log("B'H JAVA en " +process.env.PORT);
 })
 
