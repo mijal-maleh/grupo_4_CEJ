@@ -53,9 +53,10 @@ p {
 
 .iconos i {
     color: #d3d3d3;
+    margin-right: 5px;
 }
 
-.iconos:hover i {
+.iconos i:hover {
     color: #fed522;
 }
 
@@ -77,10 +78,9 @@ body {
 .categorias {
     display: flex;
     justify-content: flex-end;
-    /*padding: 20px;*/
     background-color: #d3d3d3;
     margin-top: 8px;
-    font-size: 30px;
+    font-size: 15px;
     display: none;
 }
 
@@ -102,7 +102,7 @@ body {
     justify-content:flex-start;
     text-align: flex-start;
     margin-left:0px;
-    margin-top: 40px;
+    margin-top: 20px;
     
 }
 
@@ -110,7 +110,7 @@ body {
     font-size: xx-small;
     height: 40px;
     position: absolute;
-    opacity:70%;
+    opacity:90%;
     top: 20px;
     left: 35px;
 }
@@ -235,7 +235,8 @@ p {
     margin-top: 40px;
     border:#894243 solid;
     width: 100%;
-    height: 40%;
+    height: 30%;
+    background-color: #ffffff;
 }
 h3{
     text-align: center;
@@ -280,12 +281,70 @@ h6{
     height:100%;    
 }
 
+/*-----------------------------scroll fotos horozontal(sin scroll)--------------------*/
+
+.scroll-fotos{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 50%;
+}
+.scroll-fotos img{
+    width: 50%;
+    min-height:15%;
+    max-height: 40%;
+    object-fit: cover;
+}
+
+/*---------------------------------------footer---------------------------*/
+
+footer{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#a4a5a7;
+    height:100px;
+    width:100%;
+    border-top: 4px #fed522 solid;
+    font-size: 30px;
+}
+
+
+.footer-bar-left{
+    margin-left: 10px;
+    width: 50%;
+    text-align: left;
+    padding-left: 5px;
+}
+.footer-bar-rigth{
+    margin-right: 10px;
+    width: 50%;
+    text-align: right;
+    padding-right: 5px;
+}
+
+i{
+    color:#d3d3d3; ;
+    font-weight: solid;
+    padding: 3px;
+    border: black;
+}
+
+i:hover {
+    color:#fed522
+}
+
+
+
 
 
 /*-----------------------------------------medias-------------------------------------*/
 
 
-@media (min-width:480px){
+@media (min-width:500px){
     
     .logo{ 
     width: 200px;
@@ -294,25 +353,54 @@ h6{
     }
     .categorias{
         display:flex;
+        padding-bottom: 5px;
+        padding-top: 5px;
     }
+
 /*.slider{
     height: 400px;
 }*/
+
 .menu-cel i{
     display: none;
 }
+.destacados-de-la-semana{
+    width: 35%;
+}
+.scroll-fotos img{
+    width: 33%;
+}
 
 }
+
+/*-------------------------media deskptop-----------------------*/
+
 @media (min-width:1200px){ 
+    .categorias{
+        font-size: 30px;
+        padding: 0%;
+    }
 .destacados-de-la-semana{
     border:#894243 solid;
-    width: 100%;
-    height: 40%;
+    width: 25%;
+    height: 20%;
 }
+
 h6{
-    font-size: 25px;
+    font-size: 15px;
+    text-align: center;
 }
-.destacados-de-la-semana p{ 
-    font-size: 20px;
+.destacados-de-la-semana{ 
+    font-size: 12px;
 }
+.info{
+    padding-left: 20px;
+    padding-right:20px ;
+}
+ 
+.scroll-fotos img{
+    width: 20%;
+    max-height:10%;
+}
+
  }
