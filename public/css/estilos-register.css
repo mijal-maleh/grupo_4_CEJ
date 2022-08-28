@@ -35,7 +35,13 @@ body{
     position: fixed;
     top: 12px;
     right: 12px;
-    border: 1px solid #a4a5a7 ;
+    /* border: 1px solid #a4a5a7 ; */
+    background-color: #fed522;
+    color: #ffffff;
+    border: none;
+}
+.cerrarVentana:hover {
+    background-color: #fead22;
 }
 
 .logo {

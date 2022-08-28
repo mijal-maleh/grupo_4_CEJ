@@ -183,7 +183,77 @@ p {
     position: relative;
     left: 20px;
 }
+<<<<<<< HEAD
+
+/*ESTILOS DEL FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#a4a5a7;
+    height:100px;
+    width:100%;
+    border-top: 4px #fed522 solid;
+    font-size: 30px;
+}
+
+.footer-bar-left{
+    width: 50%;
+    text-align: left;
+    padding-left: 5px;
+    display: flex;
+}
+.footer-bar-rigth{
+    width: 50%;
+    text-align: right;
+    padding-right: 5px;
+    display: flex;
+    justify-content: end;
+}
+
+i{
+    color:#fed522 ;
+    font-weight: solid;
+    padding: 3px;
+    border: black;
+}
+
+i:hover {
+    color:#d3d3d3;
+}
+
+.iconofoot {
+    background-color: #4d4d4d;
+   border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    font-size: 12px;
+}
+
+.iconofoot-whatsapp
+{
+    background-color: #4d4d4d;
+   border-radius: 50%;
+    text-align: center;
+    padding: 2px;
+    margin: 2px;
+    font-size: 12px;
+}
+.iconofoot-map-marker{
+    background-color: #4d4d4d;
+    border-radius: 50%;
+     text-align: center;
+     padding: 2px;
+     margin: 2px;
+     font-size: 12px;
+}
+
+
+=======
 /*
+>>>>>>> 235f1c877f9b8b3bc10df14d155f288f0a8bd00b
 @keyframes cambio {
     0% {
         margin-left: 0;
@@ -366,6 +436,9 @@ i:hover {
 .menu-cel i{
     display: none;
 }
+<<<<<<< HEAD
+}
+=======
 .destacados-de-la-semana{
     width: 35%;
 }
@@ -406,3 +479,4 @@ h6{
 }
 
  }
+>>>>>>> 235f1c877f9b8b3bc10df14d155f288f0a8bd00b
