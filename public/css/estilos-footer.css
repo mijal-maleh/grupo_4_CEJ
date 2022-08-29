@@ -45,16 +45,23 @@ footer {
 }
 
 i {
-    color: #fed522;
+    color: #d3d3d3;
     font-weight: solid;
     padding: 3px;
     border: black;
 }
 
 i:hover {
-    color: #d3d3d3;
+    color: #fed522;
 }
 
+.iconos-redes-p-texto:hover{
+    color: #fed522;
+}
+
+.info-gral p:hover{
+    color: #fed522; 
+}
 .iconofoot-left {
     background-color: #4d4d4d;
     border-radius: 50%;
@@ -96,7 +103,7 @@ i:hover {
     }
 
     .iconos-redes-p-texto {
-        color: #fed522;
+        color: #ebebeb;
         padding-left: 2px;
         font-size: 10px;
     }
@@ -143,7 +150,7 @@ i:hover {
     }
 
     .info-gral p {
-        color: #fed522;
+        color: #ebebeb;
         text-align: left;
         font-size: 10px;
         padding: 3px;
