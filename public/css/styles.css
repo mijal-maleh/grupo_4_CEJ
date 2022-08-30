@@ -252,6 +252,7 @@ h6{
 }
 .destacados-de-la-semana p{
     font-size: 15px;
+    text-align: center;
 }
 .info{
     display: flex;
@@ -340,7 +341,7 @@ marquee{
     display: none;
 }
 
-}
+
 
 .destacados-de-la-semana{
     width: 35%;
