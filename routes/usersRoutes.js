@@ -1,5 +1,11 @@
 const express = require ('express');
-const router = express.Router();
+const productController = require('../controllers/productController');
+const usersRouter = express.Router();
+const usersController = require('../controllers/usersController');
 
 
-module.exports = router;
+router.get('/productCart',usersController.productCart);
+
+router.get('/profile',usersController.profile)
+
+module.exports = usersRouter;
