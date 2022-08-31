@@ -2,13 +2,15 @@
  CON QUE DESAFIO ME ENFRENTE?
  QUE VOY A HACER HOY?
  CONCLUSIONES
+git 
 
-<<<<<<< HEAD
-=======
+29/8 lunes
+malka
+ QUE HICE AYER? termine el footer, en todas las resoluciones, y empece con el html de ProductDetail.
+ CON QUE DESAFIO ME ENFRENTE? errores de git al hacer pull
+ QUE VOY A HACER HOY? seguir con ProductDetail
+ CONCLUSIONES: vamos a prestar mas atencion a la comunicacion a la hora de modificar archivos donde el otro esta trabajando
 
-
-
->>>>>>> 235f1c877f9b8b3bc10df14d155f288f0a8bd00b
  
 24/08 miercoles
 mijal
