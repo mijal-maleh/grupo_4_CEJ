@@ -1,0 +1,25 @@
+Resumen del paso a paso Clase 19
+-Npm init -y
+-Instalamos dependencias(express)
+-Creamos app.js(entry point)
+-Requerimos express
+-Inicializamos express
+-Seteamos el puerto con app.listen
+-Creamos la carpeta views.
+-Creamos los archivos html.
+-En app.js requerimos el módulo path.
+-Creamos las rutas y utilizamos sendFile.
+-Crear carpeta de rutas.
+-Crear archivo específico para rutas dependiendo la temática de las mismas (productos, usuarios, etc)
+-Requerir el módulo path
+-Cortar las rutas que tenemos en el entry point, pegarlas en el router y modificarlas con router.get en vez de app.get.
+-Exportar el router.
+-Importar el router en el entry point.
+-Utilizarlo con app.use(nombreRouter).
+-Crear el prefijo para las rutas.
+-En el router, modificar las rutas (sacando el prefijo que ya configuramos en app)
+-Crear carpeta controllers.
+-Crear archivo que servirá como controlador.
+-Requerir módulo path.
+-Crear un objeto con las funciones para cada ruta.
+
