@@ -1,13 +1,14 @@
 const express = require ('express');
 const app = express();
-const dotenv = require ('dotenv').config();
-const productRouter = require ('productRouter');
-const mainRouter = require ('mainRouter');
-const usersRouter = require ('usersRouter');
+const path = require ('path');
+
+const productRouter = require ('.routes/productRoutes');
+const mainRouter = require ('.routes/mainRoutes');
+const usersRouter = require ('.routes/usersRouter');
 
 
-app.listen(process.env.PORT || 3001,'0.0.0.0',()=>{
-    console.log("B'H JAVA en " +process.env.PORT);
+app.listen(3001,()=>{
+    console.log("B'H JAVA en 3001");
 })
 
 const rutaCompleta = path.join (__dirname,'/public')
