@@ -2,17 +2,17 @@ const path = require ('path');
 
 const mainController = {
     index: (req,res)=>{
-        const rutaCompleta = path.join (__dirname,'/views/index.html');
+        const rutaCompleta = path.join (__dirname,'../views/index.html');
         res.sendFile (rutaCompleta)
     },
     
     login: (req,res)=>{
-        const rutaCompleta = path.join (__dirname,'/views/login.html');
+        const rutaCompleta = path.join (__dirname,'.. /views/login.html');
         res.sendFile (rutaCompleta)
     },
     
     register: (req,res)=>{
-        const rutaCompleta = path.join (__dirname,'/views/register.html');
+        const rutaCompleta = path.join (__dirname,'../views/register.html');
         res.sendFile (rutaCompleta)
     },
     
