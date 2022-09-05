@@ -15,6 +15,6 @@ const rutaCompleta = path.join (__dirname,'/public')
 
 app.use(express.static(rutaCompleta));
 
-app.use('/product', productRouter);
+app.use('/product',productRouter);
 app.use('/', mainRouter);
 app.use('/users', usersRouter);
