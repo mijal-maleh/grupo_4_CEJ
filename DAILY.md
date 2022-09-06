@@ -3,7 +3,11 @@
  QUE VOY A HACER HOY?
  CONCLUSIONES
 git 
-
+5/11
+mijal
+corregimos errores en rutas y controladores.
+esto nos dificulto el avance en el trabajo en gral, ya que no podiamos acceder al sitio.
+continuaremos implementando ejs en el proyecto.
 29/8 lunes
 malka
  QUE HICE AYER? termine el footer, en todas las resoluciones, y empece con el html de ProductDetail.

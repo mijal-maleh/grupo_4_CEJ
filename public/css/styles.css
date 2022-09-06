@@ -70,7 +70,7 @@ body {
     text-decoration: none;
     /*margin-left:10px;*/
     border-left: solid #fed522 5px;
-   padding: 10px;
+    padding: 10px;
 }
 
 .categorias {
@@ -79,6 +79,7 @@ body {
     background-color: #d3d3d3;
     margin-top: 8px;
     font-size: 15px;
+    width: 100%;
     display: none;
 }
 
@@ -89,44 +90,45 @@ body {
     background-color: #d3d3d3;
     font-size: 30px;
     border: #a4a5a7 solid 1px;
-    padding:10px;
+    padding: 10px;
     margin-top: 8px;
-    display:inline-flex;
-      flex-direction: row-reverse;
- width: 50px;
- margin-left: 88%;
-     }
+    display: inline-flex;
+    flex-direction: row-reverse;
+    width: 50px;
+    margin-left: 88%;
+}
 
 
 
 .datos-semanales {
     position: relative;
     display: inline-flex;
-    flex-direction:column;
-    justify-content:flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     text-align: flex-start;
-    margin-left:0px;
-    margin-top: 20px;
-    
+    align-items: center;
+    margin-left: 0px;
+    bottom: 55px;
 }
 
 .datos-semanales img {
-    /*font-size: small;*/
     height: 60px;
     position: absolute;
-    opacity:90%;
-
+    opacity: 80%;
     top: 50%;
     left: 50%;
 }
- .semana p, h4{
+
+.semana p {
     display: flex;
     flex-wrap: wrap;
-    text-align:center;
+    flex-direction:column;
+    text-align: center;
     z-index: 5;
-    color:#4d4d4d;
-    right:40px;
-    top:40px ;
+    color: #4d4d4d;
+    left: 100px;
+    bottom: 5px;
 }
 
 /*SLIDER*/
@@ -134,31 +136,31 @@ body {
 
 .slider {
     width: 100%;
-    overflow: hidden;
-    height:80% ;
+    /*overflow: hidden;*/
+    height: 80%;
     margin: 50px auto 0px;
     border: #a4a5a7 solid 2px;
     justify-content: center;
     position: relative;
     top: 60px;
-    left:10% ;
-    animation: cambio 20s infinite alternate ease-in-out;
+    left: 10%;
+    /*animation: cambio 20s infinite alternate ease-in-out;*/
 }
 
 
 .slider ul {
     width: 500%;
     display: flex;
-    
-       }
+
+}
 
 .slider li {
-    width:  100%;
+    width: 100%;
     height: 100%;
     list-style: none;
     display: flex;
-    
-   
+
+
 }
 
 .slider img {
@@ -182,7 +184,7 @@ p {
     /*padding-left: 10px;*/
     margin-top: 3px;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     position: relative;
     /*left: 20px;*/
 }
@@ -192,7 +194,7 @@ p {
 
 
 
-@keyframes cambio {
+/*@keyframes cambio {
     0% {
         margin-left: 0%;
     }
@@ -233,53 +235,59 @@ p {
         margin-left: -400%;
     }
 
-}
+}*/
 
 
 /* -----------------------scroll vertical (sin scroll)*/
 
 
-.destacados-de-la-semana{
+.destacados-de-la-semana {
     margin-top: 40px;
-    border:#894243 solid;
+    border: #894243 solid;
     width: 100%;
     height: 30%;
     background-color: #ffffff;
 
 }
-h3{
-    text-align:center;
+
+h3 {
+    text-align: center;
     font-size: 20px;
     justify-content: 5px;
 }
-h6{
-    font-size:15px;
+
+h6 {
+    font-size: 15px;
 }
-.destacados-de-la-semana p{
+
+.destacados-de-la-semana p {
     font-size: 12px;
     text-align: center;
 }
-.info{
+
+.info {
     display: flex;
-    flex-direction:column;
-    justify-content:center;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    padding-left:20px;
+    padding-left: 20px;
 }
-.curso1{
+
+.curso1 {
     border: #f3ba0c solid 2px;
-    margin-top:15px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     width: 100%;
 }
-.amasado img{
-    width:100px;
-    height:100%;
+
+.amasado img {
+    width: 100px;
+    height: 100%;
 }
 
 
-.curso2{
+.curso2 {
     border: #f3ba0c solid 2px;
     margin-top: 15px;
     display: flex;
@@ -288,14 +296,14 @@ h6{
     justify-content: flex-start;
 }
 
-.curso img{
-    width:100px;
-    height:100%;    
+.curso img {
+    width: 100px;
+    height: 100%;
 }
 
 /*-----------------------------scroll fotos horozontal(sin scroll)--------------------*/
 
-.scroll-fotos{
+.scroll-fotos {
     margin-top: 50px;
     display: flex;
     flex-wrap: nowrap;
@@ -304,21 +312,19 @@ h6{
     height: 50%;
     overflow: hidden;
 }
-.scroll-fotos img{
+
+.scroll-fotos img {
     width: 50%;
-    min-height:15%;
-    max-height: 40%;
+    height: 100%;
     object-fit: cover;
 }
 
-marquee{
-    direction: right;
-    behavior: scroll;
-
-}
 
 
-    
+
+
+
+
 /*---------------------------------------footer---------------------------*/
 
 
@@ -326,67 +332,71 @@ marquee{
 /*-----------------------------------------medias-------------------------------------*/
 
 
-@media (min-width:500px){
-    
-    .logo{ 
-    width: 200px;
-    height: 200px;
-    top:-10px;
+@media (min-width:500px) {
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        top: -10px;
     }
-    .categorias{
-        display:flex;
+
+    .categorias {
+        display: flex;
         padding-bottom: 5px;
         padding-top: 5px;
     }
 
-/*.slider{
+    /*.slider{
     height: 400px;
 }*/
 
-.menu-cel i{
-    display: none;
-}
+    .menu-cel i {
+        display: none;
+    }
 
 
 
-.destacados-de-la-semana{
-    width: 35%;
-}
-.scroll-fotos img{
-    width: 33%;
-}
+    .destacados-de-la-semana {
+        width: 35%;
+    }
+
+    .scroll-fotos img {
+        width: 33%;
+    }
 
 }
 
 /*-------------------------media deskptop-----------------------*/
 
-@media (min-width:1200px){ 
-    .categorias{
+@media (min-width:1200px) {
+    .categorias {
         font-size: 30px;
         padding: 0%;
     }
-.destacados-de-la-semana{
-    border:#894243 solid;
-    width: 25%;
-    height: 20%;
-}
 
-h6{
-    font-size: 15px;
-    text-align: center;
-}
-.destacados-de-la-semana{ 
-    font-size: 12px;
-}
-.info{
-    padding-left: 20px;
-    padding-right:20px ;
-}
- 
-.scroll-fotos img{
-    width: 20%;
-    max-height:10%;
-}
+    .destacados-de-la-semana {
+        border: #894243 solid;
+        width: 25%;
+        height: 20%;
+    }
 
- }
+    h6 {
+        font-size: 15px;
+        text-align: center;
+    }
 
+    .destacados-de-la-semana {
+        font-size: 12px;
+    }
+
+    .info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .scroll-fotos img {
+        width: 20%;
+        max-height: 10%;
+    }
+
+}
