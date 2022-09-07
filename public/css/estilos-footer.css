@@ -76,7 +76,7 @@ i:hover {
     margin-top: 2px;
     position: absolute;
     bottom: 3px;
-    font-size: 12;
+    font-size: 12px;  /*aca agruegue size 12px*/
 }
 
 /*MEDIA QUERIES DE TABLET*/

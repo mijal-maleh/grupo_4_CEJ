@@ -117,7 +117,7 @@ body {
     position: absolute;
     opacity: 80%;
     top: 50%;
-    left: 50%;
+    left: 100%;
 }
 
 .semana p {
@@ -242,7 +242,7 @@ p {
 
 
 .destacados-de-la-semana {
-    margin-top: 40px;
+    margin-top: 100px;  /*cambie de 40 a 100*/
     border: #894243 solid;
     width: 100%;
     height: 30%;
