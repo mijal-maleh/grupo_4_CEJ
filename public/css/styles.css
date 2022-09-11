@@ -143,9 +143,9 @@ body {
 
 
 .slider {
-    width: 100%;
-    /*overflow: hidden;*/
-    height: 70 vw;
+    width: 70%;
+    overflow: hidden;
+    height:  100%;
     margin:0px auto 0px;
     border: #a4a5a7 solid 2px;
     justify-content: center;
@@ -160,7 +160,6 @@ body {
 .slider ul {
     width: 500%;
     display: flex;
-
 }
 
 .slider li {
@@ -168,16 +167,14 @@ body {
     height: 100%;
     list-style: none;
     display: flex;
-
-
 }
 
 .slider img {
-    width: 50%;
+    width: 40%;
     height: 100%;
     object-fit: cover;
-    /*padding-right: 10px;*/
     margin-bottom: 10px;
+    position:relative;
 }
 
 .slider ul li h4,
@@ -189,20 +186,17 @@ p {
 .slider li .txt {
     width: 50%;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
+    margin-left:22px;
     margin-top: 3px;
     align-items: center;
-    justify-content: center;
-    position: relative;
+    justify-content:center;
+    position:relative;
     right: 20px;
     padding-left: 10px;
     padding-right:10px ;
     
 }
-
-
-
-
 
 
 /*@keyframes cambio {
@@ -253,7 +247,7 @@ p {
 
 
 .destacados-de-la-semana {
-    margin-top: 100px;  /*cambie de 40 a 100*/
+    margin-top: 10px;  /*cambie de 40 a 100*/
     border: #894243 solid;
     width: 100%;
     height: 30%;
@@ -325,7 +319,7 @@ h6 {
 }
 
 .scroll-fotos img {
-    width: 50%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -372,14 +366,27 @@ h6 {
     }
 
     .slider{
+    width:60%;
     top:40px;
+    flex-direction:row;
+     justify-content:flex-end;
+     left:100px;
 }
 
 
     .destacados-de-la-semana {
         width: 35%;
     }
+.destacados-de-la-semana p{
+    display:none;
+}
+.destacados-de-la-semana h6{
+    font-size:10px;
+}
 
+.destacados-de-la-semana img{
+    width:70px;
+}
     .scroll-fotos img {
         width: 33%;
     }
@@ -410,10 +417,10 @@ h6 {
         text-align: center;
     }
 
-    .info {
+    /*.info {
         padding-left: 20px;
         padding-right: 20px;
-    }
+    }*/
 
     .scroll-fotos img {
         width: 20%;
