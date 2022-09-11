@@ -4,18 +4,134 @@
     box-sizing: border-box;
     font-family: questrial;
 }
-main{
-    padding: 15px;
-}
+
 .detalleArt {
     width: 90%;
     max-height: 50%;
     margin: auto;
+    /*     border: #a4a5a7 solid 1px; */
+
+    overflow: hidden;
+    height: 100%;
+    margin: 0px auto 0px;
+    border: #a4a5a7 solid 2px;
+    justify-content: center;
+    position: relative;
+    bottom: 20px;
+    text-align: center;
 }
-.titulo{
-    padding-bottom: 10px;
+.titulo {
+    padding: 10px;
 }
-.articulo{
+.titulo-text{
+    font-size: 20px;
+}
+
+.articulo {
     width: 100%;
     padding-bottom: 15px;
+}
+
+.main-body {
+    margin-top: 10px; 
+    border: #894243 solid;
+    width: 100%;
+    height: 30%;
+    background-color: #ffffff;
+    padding: 15px;
+
+}
+
+.precioP,
+.oferta{
+    padding: 10px;
+    padding-left: 0;
+}
+
+select,
+option {
+    background-color: #a4a5a7;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    color: #fed522;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    
+}
+input {
+    background-color: #a4a5a7;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    color: #fed522 !important;
+    font-weight: bold;
+    border-radius: 5px;
+    display: flex;
+    margin: auto;
+    margin-bottom: 10px;
+    }
+.botonesArt{
+    display: inline-block;
+    text-align: center;
+}
+.buttonArt{
+    background-color: #a4a5a7;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    color: #fed522;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.buttonArt:hover{
+    background-color:#fed522 ;
+    color: #a4a5a7;
+}
+
+.accionesArt{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    text-align: center;
+    background-color: #a4a5a7; 
+    margin-bottom: 15px;   
+}
+.descrArtTitulo{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+.descrArt p{
+    border: #fed522 solid;
+    padding: 7px;
+}
+
+.footerTitulo{
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+/*CARROUSEL DE IMAGENES DEL FOOTER*/
+
+
+.footerArt{
+    display: flex;
+    width: 100%;
+    overflow-x: scroll;
+
+    scroll-snap-type: x mandatory;
+}
+
+.footerArt img{
+    flex: 0 0 100;
+    width: 40%;
+    object-fit: cover;
+
+    scroll-snap-align: center;
 }

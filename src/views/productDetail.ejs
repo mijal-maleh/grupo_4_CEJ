@@ -1,100 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <%- include ('./partials/head.ejs')%>
-    
+<%- include ('./partials/head.ejs')%>
+
     <link rel="stylesheet" href="../css/estilos-productDetail.css">
-    
+
     <title>Detalle de Actividades</title>
-</head>
+    </head>
 
-
-<body>
-    <header>
+    <body>
         <%- include ('./partials/header.ejs')%>
-        <%- include ('./partials/main-header.ejs')%>
-    </header>
-    <main>
-        <section class="detalleArt">
-            <div class="titulo">
-                <h1>AMASADO DE JALA</h1>
-                <!-- aca habria que poner una variable -->
-            </div>
-            <article class="articulo">
-                <img src="/images/jala_whatsmod.jpg" alt="amasado" width="100%">
-            </article>
-        </section>
-        <section class="priceArt">
-            <div class="precio">
-                <h4 class="precioTitulo">COSTO</h4>
-                <p class="precioP">Sugerido $600</p>
-                <select name="precioArt" id="precioArt">
-                    <option value="600" selected>$600</option>
-                    <option value="">$600</option>
-                    <option value="other">Otro valor</option>
-                    <input type="text">
-                </select>
-            </div>
-            <div class="oferta">
-                <h4 class="ofertaTitulo"></h4>
-                <p class="ofertaP">Aceptamos tarjetas de crédito, débito, mercado pago y efectivo. Consulte por otros
-                    medios de pago</p>
-            </div>
-        </section>
-        <section class="actionsArt">
-            <div class="botonesArt">
-                <button class="buttonArt">INSCRIBIRSE AHORA</button>
-                <button class="buttonArt">AGREGAR AL CARRITO
-                </button>
-            </div>
-            <div class="accionesArt">
-                <div class="favoritos">
-                    <i class="far fa-heart"></i>
-                    <p>Agregar a favoritos</p>
-                </div>
-                <div class="compartir">
-                    <i class="fas fa-share-alt"></i>
-                    <p>Compartir</p>
-                </div>
-            </div>
-        </section>
-        <section class="descrArt">
-            <h2 class="descrArtTitulo">
-                DESCRIPCION
-            </h2>
-            <p>Esta actividad promueve la transmisión de valores entre las distintas generaciones, llama a reflexionar
-                sobre la importancia de la mesa compartida y revaloriza los rituales que generan paz y armonía. Además,
-                plantea generar un momento que puede ser vivido como recreativo, religioso o simplemente un momento en
-                familia, que se abre en la ciudad en sintonía con muchas otras ciudades en todo el mundo, unidas por la
-                misma experiencia. Asimismo busca generar un espacio de encuentro entre mujeres, donde abuelas, madres y
-                nietas pueden compartir juntas un momento enriquecedor.
-            </p>
-            <p>
-                Cuando va a ser?
-                El Jueves 4 de Agosto a las 14 horas</p>
-            <p>
-                Como puedo participar?
-                En forma presencial o por zoom desde tu casa, escuela, oficina!
-            </p>
-        </section>
-     <footer class="footerArt">
-            <div class="footer-img">
-                <img src="images/cena-mujeres.jpg" alt="cena-mujeres" width="100%">
-            </div>
-            <div class="footer-img">
-                <img src="images/januka-calle.jpg" alt="januka" width="100%">
-            </div>
-            <div class="footer-img">
-                <img src="images/purim.jpg" alt="purim" width="100%">
-            </div>
-            <div class="footer-img">
-                <img src="images/estudio-con-rab.jpg" alt="shiur-rab" width="100%">
-            </div>
-        </footer>
-    </main>
-     <footer>
-        <%- include ('./partials/footer.ejs')%>
-    </footer>
-</body>
+            <%- include ('./partials/main-header.ejs')%>
+
+                <main>
+                    <section class="detalleArt">
+                        <div class="titulo">
+                            <h3 class="titulo-text">Amasado de Jala</h3>
+                            <!-- aca habria que poner una variable -->
+                        </div>
+                        <article class="articulo">
+                            <img src="/images/jala_whatsmod.jpg" alt="amasado" width="100%">
+                        </article>
+                    </section>
+                    <section class = "main-body">
+                        <section class="priceArt">
+                            <div class="precio">
+                                <h4 class="precioTitulo">Costo</h4>
+                                <p class="precioP">Colaboración sugerida $600</p>
+                                <select class="precioArt" name="precioArt" id="precioArt">
+                                    <option class="precioPBox1" value="600" selected>$600</option>
+                                    <option class="precioPBox2" value="other">Otro valor</option>
+                                    <input class= "precioArtInput" type="text" placeholder=" Ingrese valor">
+                                    <!-- aparece este campo al elegir la opcion other, si no no aparece -->
+                                </select>
+                            </div>
+                            <div class="oferta">
+                                <h4 class="ofertaTitulo"></h4>
+                                <p class="ofertaP">Aceptamos tarjetas de crédito, débito, mercado pago y efectivo.
+                                    Consulte por otros
+                                    medios de pago</p>
+                            </div>
+                        </section>
+                        <section class="actionsArt">
+                            <div class="botonesArt">
+                                <button class="buttonArt">Inscribirse Ahora</button>
+                                <button class="buttonArt">Agregar al Carrito</button>
+                            </div>
+                            <div class="accionesArt">
+                                <div class="favoritos">
+                                    <i class="far fa-heart"></i>
+                                    <p>Agregar a favoritos</p>
+                                </div>
+                                <div class="compartir">
+                                    <i class="fas fa-share-alt"></i>
+                                    <p>Compartir</p>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="descrArt">
+                            <h3 class="descrArtTitulo">
+                                Descripción
+                            </h3>
+                            <p>Esta actividad promueve la transmisión de valores entre las distintas generaciones, llama
+                                a reflexionar
+                                sobre la importancia de la mesa compartida y revaloriza los rituales que generan paz y
+                                armonía. Además,
+                                plantea generar un momento que puede ser vivido como recreativo, religioso o simplemente
+                                un momento en
+                                familia, que se abre en la ciudad en sintonía con muchas otras ciudades en todo el
+                                mundo, unidas por la
+                                misma experiencia. Asimismo busca generar un espacio de encuentro entre mujeres, donde
+                                abuelas, madres y
+                                nietas pueden compartir juntas un momento enriquecedor.
+                                <br><br>
+                                Cuando va a ser?
+                                El Jueves 4 de Agosto a las 14 horas
+                                <br><br>
+                                Como puedo participar?
+                                En forma presencial o por zoom desde tu casa, escuela, oficina!
+                            </p>
+                        </section>
+                    </section>
+                    <section>
+                        <h3 class="footerTitulo">
+                            Esto también te puede interesar
+                        </h3>
+                    </section>
+
+                    <footer class="footerArt">
+                    
+                           
+                            <img src="/images/peguisha.jpg" alt="peguisha" width="100%">
+                           
+                            <img src="/images/viaje-Rebe.jpg" alt="viaje Rebe" width="100%">
+                            <img src="/images/viaje.jpg" alt="viaje" width="100%">
+                            <img src="/images/charla-tzivia.jpg" alt="charla tzivia" width="100%">
+                           
+                            <img src="/images/cena-mujeres.jpg" alt="cena mujeres" width="100%">
+                 
+                            <img src="/images/cena-jueves.jpg" alt="cena jueves" width="100%">
+                    
+                           
+                            <img src="/images/januka-calle.jpg" alt="januka calle" width="100%">
+                            <img src="/images/purim-magia.jpg" alt="purim magia" width="100%">
+                            <img src="/images/purim.jpg" alt="purim" width="100%">
+                            <img src="/images/shabaton-elul.jpg" alt="shabaton elul" width="100%">
+                            <img src="/images/shiur.jpg" alt="shiur" width="100%"> 
+                            <img src="/images/ciclo-de-estudio.jpg" alt="ciclo de estudio" width="100%">
+                            <img src="/images/hall-majon.jpg" alt="hall majon" width="100%">
+                            <img src="/images/jai-elul2.jpg"  alt="jai elul" width="100%">
+                            <img src="/images/melave-malka.jpg" alt="melave malka" width="100%">
+                        </div>
+                    </footer>
+                </main>
+                <footer>
+                    <%- include ('./partials/footer.ejs')%>
+                </footer>
+    </body>
 
 </html>
