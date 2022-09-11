@@ -279,7 +279,7 @@ input {
     .footerArt {
         display: flex;
         flex-direction: column-reverse;
-        height: 100vh;
+        height: 100%;
         overflow: scroll;
         scroll-snap-type: y mandatory;
     }
