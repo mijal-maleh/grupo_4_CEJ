@@ -20,10 +20,15 @@
     bottom: 20px;
     text-align: center;
 }
+.descrArt2{
+    display: none;
+}
+
 .titulo {
     padding: 10px;
 }
-.titulo-text{
+
+.titulo-text {
     font-size: 20px;
 }
 
@@ -33,7 +38,7 @@
 }
 
 .main-body {
-    margin-top: 10px; 
+    margin-top: 10px;
     border: #894243 solid;
     width: 100%;
     height: 30%;
@@ -43,7 +48,7 @@
 }
 
 .precioP,
-.oferta{
+.oferta {
     padding: 10px;
     padding-left: 0;
 }
@@ -53,65 +58,78 @@ option {
     background-color: #a4a5a7;
     border: none;
     padding: 10px;
-    width: 80%;
+    width: 50%;
     color: #fed522;
     font-weight: bold;
     border-radius: 5px;
     display: flex;
     margin: auto;
     margin-bottom: 10px;
-    
+
 }
+
 input {
     background-color: #a4a5a7;
     border: none;
     padding: 10px;
-    width: 80%;
+    width: 50%;
     color: #fed522 !important;
     font-weight: bold;
     border-radius: 5px;
     display: flex;
     margin: auto;
     margin-bottom: 10px;
-    }
-.botonesArt{
-    display: inline-block;
-    text-align: center;
 }
-.buttonArt{
+
+.botonesArt {
+    display: block;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+.buttonArt {
     background-color: #a4a5a7;
     border: none;
     padding: 10px;
-    width: 80%;
+    width: 70%;
     color: #fed522;
     font-weight: bold;
     border-radius: 5px;
     margin-bottom: 10px;
+    justify-content: center;
 }
-.buttonArt:hover{
-    background-color:#fed522 ;
+
+.buttonArt:hover {
+    background-color: #fed522;
     color: #a4a5a7;
 }
 
-.accionesArt{
+.accionesArt {
     display: flex;
+    width: 70%;
     justify-content: space-evenly;
     padding: 5px;
     text-align: center;
-    background-color: #a4a5a7; 
-    margin-bottom: 15px;   
+    background-color: #a4a5a7;
+    border-radius: 5px;
+    margin: auto;
 }
-.descrArtTitulo{
+
+.descrArtTitulo {
+    margin-top: 20px;
     padding: 10px;
     font-size: 20px;
     text-align: center;
 }
-.descrArt p{
+
+.descrArt p {
     border: #fed522 solid;
-    padding: 7px;
+    padding: 10px;
+    line-height: 15px;
 }
 
-.footerTitulo{
+.footerTitulo {
     font-size: 16px;
     text-align: center;
     padding: 10px;
@@ -120,18 +138,158 @@ input {
 /*CARROUSEL DE IMAGENES DEL FOOTER*/
 
 
-.footerArt{
+.footerArt {
     display: flex;
     width: 100%;
+    height: 15vh;
     overflow-x: scroll;
 
     scroll-snap-type: x mandatory;
 }
 
-.footerArt img{
-    flex: 0 0 100;
+.footerArt img {
+    flex: 0 100 0;
     width: 40%;
     object-fit: cover;
 
     scroll-snap-align: center;
+}
+
+@media (min-width:481px) {
+
+    .titulo-text,
+    .precioTitulo,
+    .descrArtTitulo,
+    .footerTitulo {
+        font-size: 30px;
+    }
+
+    .precioP,
+    .ofertaP,
+    .descrArt p {
+        font-size: 14px;
+    }
+
+    .accionesArt p {
+        font-size: 14px;
+    }
+
+    .descrArt p {
+
+        line-height: 20px;
+    }
+
+    .buttonArt,
+    .accionesArt {
+        width: 50%;
+    }
+
+    .footerArt {
+        height: 30vh;
+    }
+}
+
+@media (min-width:769px) {
+    main {
+        position: relative;
+    }
+
+    .detalleArt {
+        position: relative;
+        top: 20px;
+        right: 25vw;
+        width: 50%;
+        height: 60%;
+    }
+
+    .main-body {
+        position: absolute;
+        top: 0px;
+        left: 51vw;
+        width: 24.5%;
+        height: 55%;
+        border: none;
+        padding-right: 30px;
+      
+    }
+    p.ofertaP {
+        font-size: 10px;
+        padding-top: 0px;
+    }
+
+    .priceArt,
+    .actionsArt {
+        position: relative;
+    }
+
+    select,
+    option,
+    input,
+    .buttonArt,
+    .accionesArt {
+        width: 100%;
+    }
+.descrArt{
+    display: none;
+}
+    .descrArt2 {
+        border: #894243 solid;
+        display: block;
+        position: relative;
+        top: 20px;
+        width: 75%;   
+    }
+    
+    .descrArtTitulo{
+        padding: 0 0 10px 10px;
+        text-align: left;
+    }
+    .descrArt2 p {
+        font-size: 16px;
+     padding: 0 10px 0px 10px ;
+        padding-top: 0px;
+        margin-bottom: 40px;
+    }
+
+    .precioTitulo,
+
+    .descrArtTitulo{
+        font-size: 20px;
+    }
+    .footerTitulo {
+        position: absolute;
+        top: 20px;
+        right: 0px;
+        width: 25%;
+        border: #fed522 solid;
+        border-bottom: none;
+        background-color: #a4a5a7;
+        font-size: 20px;
+    }
+
+    .footerArt {
+        border: #fed522 solid;
+        border-top: none;
+        position: absolute;
+        top: 83px;
+        right: 0px;
+        width: 25%;
+    }
+
+    .footerArt {
+        display: flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        overflow: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .footerArt img {
+        flex: 0 0 100;
+        width: 100%;
+        object-fit: cover;
+
+        scroll-snap-align: center;
+    }
+    
 }
