@@ -53,6 +53,7 @@ body{
 .titulo {
    text-align: center;
    margin-top: auto;
+   padding-bottom: 20px;
 
 }
 /*ESTILOS DEL MAIN*/
@@ -145,7 +146,7 @@ margin-bottom: 50px ;
     display: block;
     background-color: #fed522;
     border: none;
-    padding: 15px;
+    padding: 10px;
     width: 50%;
     color: #ffffff;
     font-weight: bold;

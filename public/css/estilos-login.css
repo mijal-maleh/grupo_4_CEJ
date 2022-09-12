@@ -53,6 +53,7 @@ body{
 .titulo {
    text-align: center;
    margin-top: auto;
+   padding-bottom: 20px;
 
 }
 /*ESTILOS DEL MAIN*/
@@ -122,18 +123,43 @@ text-align: center;
 box-shadow: 0px 0px 10px  #a4a5a7;
 margin-bottom: 50px ;
 }
+.registro {
+    margin: auto;
+}
 .registro-link{
     display: block;
     background-color: #fed522;
     border: none;
-    padding: 15px;
+    padding: 10px;
     width: 50vw;
     color: #ffffff;
     font-weight: bold;
     margin: auto;
     border-radius: 5px;
     text-decoration: none ;
+    font-size: 10px;
 }
 .registro-link:hover {
     background-color: #fead22;
+}
+
+@media (min-width:769px) {
+    
+    .registro-link {
+        font-size: 14px;
+    }
+}
+@media (min-width:1280px) {
+    .principal {
+        width: 50%;
+    }
+    .footer-login {
+        width: 50%;
+    }
+    .boton-ingresar{
+        width: 20vw;
+    }
+    .registro-link {
+        width: 20vw;
+    }
 }

@@ -13,7 +13,7 @@ footer {
     height: 70px;
     width: 100%;
     border-top: 4px #fed522 solid;
-    font-size: 30px;
+    font-size: 16px;
     position: relative;
 }
 
@@ -76,13 +76,24 @@ i:hover {
     margin-top: 2px;
     position: absolute;
     bottom: 3px;
-    font-size: 12px;  /*aca agruegue size 12px*/
+    font-size: 9px;  /*aca agruegue size 12px*/
+}
+
+/*MEDIA QUERIE PARA CELULARES MAS GRANDES*/
+@media (min-width : 280px) {
+.copyright {
+    font-size: 11px;
+}
+
+footer {
+
+    font-size: 30px;
+ 
+}
 }
 
 /*MEDIA QUERIES DE TABLET*/
 @media (min-width : 481px) {
-
-
     footer {
         height: 100px;
         justify-content: stretch;
