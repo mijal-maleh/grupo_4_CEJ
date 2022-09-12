@@ -247,7 +247,7 @@ p {
 
 
 .destacados-de-la-semana {
-    margin-top: 10px;  /*cambie de 40 a 100*/
+    margin-top: 10px; 
     border: #894243 solid;
     width: 100%;
     height: 30%;
@@ -256,9 +256,9 @@ p {
 }
 
 h3 {
-    text-align: center;
+    text-align:center;
     font-size: 20px;
-    justify-content: 5px;
+    
 }
 
 h6 {
@@ -267,7 +267,7 @@ h6 {
 
 .destacados-de-la-semana p {
     font-size: 12px;
-    text-align: center;
+    text-align
 }
 
 .info {
@@ -275,7 +275,7 @@ h6 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-left: 60px;
+    /*padding-left: 60px;*/
 }
 
 .curso1 {
@@ -417,10 +417,10 @@ h6 {
         text-align: center;
     }
 
-    /*.info {
+    .info {
         padding-left: 20px;
         padding-right: 20px;
-    }*/
+    }
 
     .scroll-fotos img {
         width: 20%;
