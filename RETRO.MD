@@ -1,3 +1,36 @@
+RETRO DEL SPRINT 3
+
+BRAINSTORMING
+1. COMENZAR A HACER
+los archivos que nos faltan
+
+2.HACER MAS
+reuniones
+comunicarse mejor
+mas agilidad
+
+3.CONTINUAR HACIENDO
+trello
+completando las tareas
+
+4.HACER MENOS
+evitar los detalles esteticos para priorizar la funcionalidad
+
+5.DEJAR DE HACER
+no hacer cosas opcionales porque si no no llegamos
+
+LO MEJOR DEL SPRINT 3:
+-pudimos avanzar con las consignas a pesar de que no teniamos terminado el sprint anterior, y no nos seguimos atrasando.
+
+LO PEOR DEL SPRINT 3:
+-las trabas que hubieron con el proyecto nos demoraron el trabajo, el proyecto no corria y nos costo resolver los errores del codigo
+-la comunicacion
+
+///////////////////////////*
+
+
+
+
 RETRO DEL SPRINT 1 Y 2
 
 BRAINSTORMING
