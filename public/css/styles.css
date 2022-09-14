@@ -146,6 +146,7 @@ H1{
     font-weight: bolder;
     font-style: oblique;
     text-align: center;
+    padding-top: 10px;
     background-color:rgba(77, 77, 77, 0.03); 
     margin-bottom:15px;
 }
@@ -158,8 +159,8 @@ H1{
     height:  60vw;
     margin:0px auto 0px;
     border: #a4a5a7 solid 2px;
+   /* display: inline-block;*/
     justify-content: center;
-    /*position: relative;*/
     bottom: 20px;
     /*animation: cambio 20s infinite alternate ease-in-out;*/
     background-color: rgba(77, 77, 77, 0.03);
@@ -194,7 +195,7 @@ p {
     text-align: center;
 
 }
-
+/*******analizar txt********************/
 .slider li .txt {
     width: 40%;
     display: flex;
@@ -383,28 +384,50 @@ h6 {
         justify-content: center;
         width: 35%;
         border: #894243 solid;
-        
+        height: 210px;
+        background-image:"images/velas.webp";
     }
     .img-velas{
-        width:100%;
+        width:80%;
+        display:none;
     }
+
 .datos-semanales2 p{
     font-size: 15px;
     margin-bottom: 5px;
+    bottom:300px;
 }
 .semana-parshe{
     font-weight:bold;
 }
+
     .menu-cel i {
         display: none;
     }
 
+    .cronograma{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: center;
+        width: 35%;
+        border: #894243 solid;  
+        height: 210px;
+    }
+    .img-cronograma{ 
+        width:100%;
+    }
+
+
+
+
+
+
     .slider{
     width:60%;
-    top:40px;
-    flex-direction:row;
-     justify-content:flex-end;
-     left:100px;
+    flex-direction: row-reverse;
+    
+   
 }
 
 
