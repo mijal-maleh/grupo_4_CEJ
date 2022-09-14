@@ -8,7 +8,7 @@
 
 /*HEADER*/
 
-header {
+/*header {
     display: flex;
     justify-content: space-between;
     background-color: #a4a5a7;
@@ -34,7 +34,7 @@ p {
     position: absolute;
     padding-bottom:7px;
     z-index: 0;
-    /*display:none;*/
+    /*display:none;*//*
 }
 
 .barrabusqueda {
@@ -60,13 +60,13 @@ p {
 
 
 /*MAIN-header*/
-
+/*
 .main-header{
     background-color: rgba(77, 77, 77, 0.03);  
 }
 .categorias a {
     text-decoration: none;
-    /*margin-left:10px;*/
+    /*margin-left:10px;*//*
     border-left: solid #fed522 5px;
     padding: 10px;
     font-size: 20px;
@@ -96,8 +96,8 @@ p {
     flex-direction:row-reverse;
     /*margin-left: 88%;
     width: 50px; */  
-    width:100%;  /*para q ocupe todo el ancho de la fila*/
-}
+  /*  width:100%;  /*para q ocupe todo el ancho de la fila*/
+/*}
 
 
 
@@ -133,27 +133,36 @@ p {
     padding-top: 5px;
     padding-left: 10px;
 }
-
+*/
 /*BODY*/
 
 body {
     background-color: rgba(77, 77, 77, 0.03);
 }
+main{
+    background-color: rgba(77, 77, 77, 0.03); ;
+}
+H1{
+    font-weight: bolder;
+    font-style: oblique;
+    text-align: center;
+    background-color:rgba(77, 77, 77, 0.03); 
+    margin-bottom:15px;
+}
 /*SLIDER*/
 
 
 .slider {
-    width: 70%;
+    width: 100%;
     overflow: hidden;
-    height:  100%;
+    height:  60vw;
     margin:0px auto 0px;
     border: #a4a5a7 solid 2px;
     justify-content: center;
-    position: relative;
+    /*position: relative;*/
     bottom: 20px;
-    /*padding-left:10px;
-    padding-right: 10px;
     /*animation: cambio 20s infinite alternate ease-in-out;*/
+    background-color: rgba(77, 77, 77, 0.03);
 }
 
 
@@ -164,13 +173,16 @@ body {
 
 .slider li {
     width: 100%;
-    height: 100%;
+    height: 60vw;
     list-style: none;
     display: flex;
 }
 
+.slider li p{
+    font-size: 15px;
+}
 .slider img {
-    width: 40%;
+    width: 60%;
     height: 100%;
     object-fit: cover;
     margin-bottom: 10px;
@@ -184,7 +196,7 @@ p {
 }
 
 .slider li .txt {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction:column;
     margin-left:22px;
@@ -195,11 +207,13 @@ p {
     right: 20px;
     padding-left: 10px;
     padding-right:10px ;
+    font-size: 18px;
+
     
 }
 
 
-/*@keyframes cambio {
+@keyframes cambio {
     0% {
         margin-left: 0%;
     }
@@ -240,8 +254,10 @@ p {
         margin-left: -400%;
     }
 
-}*/
-
+}
+.datos-semanales2{
+    display: none;
+}
 
 /* -----------------------scroll vertical (sin scroll)*/
 
@@ -250,9 +266,8 @@ p {
     margin-top: 10px; 
     border: #894243 solid;
     width: 100%;
-    height: 30%;
+    /*height: 10%;*/
     background-color: #ffffff;
-
 }
 
 h3 {
@@ -267,7 +282,7 @@ h6 {
 
 .destacados-de-la-semana p {
     font-size: 12px;
-    text-align
+    text-align:center
 }
 
 .info {
@@ -275,7 +290,7 @@ h6 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    /*padding-left: 60px;*/
+    padding-left: 10px;
 }
 
 .curso1 {
@@ -309,13 +324,14 @@ h6 {
 /*-----------------------------scroll fotos horozontal(sin scroll)--------------------*/
 
 .scroll-fotos {
-    margin-top: 50px;
+    margin-top: 10px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     width: 100%;
-    height: 50%;
+    height:30vw;
     overflow: hidden;
+   /* border: #a4a5a7 solid 2px;*/
 }
 
 .scroll-fotos img {
@@ -337,9 +353,9 @@ h6 {
 /*-----------------------------------------medias-------------------------------------*/
 
 
-@media (min-width:500px) {
+@media (min-width:480px) {
 
-    .logo {
+    /*.logo {
         width: 200px;
         height: 200px;
         top: -10px;
@@ -349,7 +365,7 @@ h6 {
         display: flex;
         padding-bottom: 6px;
         padding-top: 6px;
-        /*top:1px;*/
+        /*top:1px;*//*
     }
     .categorias a{
         padding-left: 5px;
@@ -359,8 +375,26 @@ h6 {
     
     .datos-semanales{
         display: none;
+    }*/
+    .datos-semanales2{
+        display: flex;
+        flex-direction:column;
+        text-align: center;
+        justify-content: center;
+        width: 35%;
+        border: #894243 solid;
+        
     }
-
+    .img-velas{
+        width:100%;
+    }
+.datos-semanales2 p{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+.semana-parshe{
+    font-weight:bold;
+}
     .menu-cel i {
         display: none;
     }
