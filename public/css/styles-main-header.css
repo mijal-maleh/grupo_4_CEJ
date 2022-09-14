@@ -71,10 +71,11 @@
     padding-top: 5px;
     padding-left: 10px;
 }
-nav.botones{
+/*nav.botones{
  
     height: 60px;
-}
+
+}*/
 /*******************************medias***********************************************/
 
 @media (min-width:480px) {
