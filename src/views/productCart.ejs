@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
     <%- include ('./partials/head.ejs')%>
 
-    <title>Carrito de Actividades</title>
+    <title>Suscripciones</title>
 </head>
-<%- include ('./partials/header.ejs')%>
-<%- include ('./partials/main-header.ejs')%>
+<body class="tipografia">
+    <header class="encabezado">
+        <p class="bh">B"H</p>
+        <img src="/images/logotransp.png" alt="logo JABA" class="logo">
+        <button type="button" class="cerrarVentana">      
+            <i class="fa-solid fa-xmark"></i>
+        </button>
 
-
-<body>
-    B'H HOLA MUNDO
-
-    
+  
+      
+        <h2 class="titulo">Mis Suscripciones en curso</h2>
+    </header>
+    <main class="principal">
+        <div class="curso1">
+            <i class="fa-solid fa-menorah"></i>
+            <p>Curso</p> aca va a decir el tipo de curso. 
+            Tipos: Actividad / Curso / Taller 
+        </div>
+        <div class="formu2">
+            <label for="clave">CONTRASEÑA</label>
+            <br><br>
+            <input type="text" name="clave" id="clave" class="celda"> 
+        </div>
+        <div class="olvido">
+            <a href="#" class="olvidolink">¿Olvidaste la contraseña?</a>
+        </div>
+        <div class="ingresar">
+            <button type="submit" class="boton-ingresar">INGRESAR</button>
+        </div>
+        <div class="recordar">
+            <input type="checkbox" name="recordar" id="recordar">
+            <label for="recordar">RECORDAR MIS DATOS</label>
+        </div>
+    </main>
+    <footer class="footer-login">
+        <label for="registro" class="registro">¿AÚN NO ESTÁS REGISTRADO?</label>
+        <br><br>
+        <a href="/register" class="registro-link">CREÁ TU CUENTA AQUÍ</a>
+    </footer>
 </body>
-<%- include ('./partials/footer.ejs')%>
+
+
+
+
 </html>

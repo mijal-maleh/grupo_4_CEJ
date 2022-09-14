@@ -2,6 +2,21 @@
  CON QUE DESAFIO ME ENFRENTE?
  QUE VOY A HACER HOY?
  CONCLUSIONES
+
+14/9
+Malka
+ QUE HICE AYER?
+El domingo termine la pagina de productDetail, faltaba ajustar un detalle en una seccion que se superponia con el header en una media querie. 
+Mijal encontro que era por el tipo de posicionamiento de la seccion y hoy lo correjimos.
+
+ CON QUE DESAFIO ME ENFRENTE?
+Los errores nos llevan a malos entendidos y se genera un clima no bueno, es desmotivante.
+Tambien hubo problemas con el Git y mientras estabamos en clase el proyecto tardo 1 hora en subir eso me atraso mucho, pienso que pueden ser las imagenes con lo cual por el momento agregue una linea de gitignore con la carpeta images, que igual ya estan en github y por el momento no se van a modificar
+
+ QUE VOY A HACER HOY?
+Empece a trabajar con el carrito de actividades/
+
+
 git 
 5/11
 mijal
