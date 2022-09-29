@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include ('./partials/head.ejs')%>
+        
+                <link rel="stylesheet" href="../css/estilos-productDetail.css">
+        
+                <title>Editar Actividades</title>
+        </head>
+<body>
+    
+    
+<body>
+    <%- include ('./partials/header.ejs')%>
+        <%- include ('./partials/main-header.ejs')%>
+
+            <main>
+
+                <H1>Pagina de Edicion de Actividades</H1>
+                <br><br><br>
+
+                <h2>1. Crear nueva actividad</h2>
+                <br>
+                <form action="/" method="put">
+                    <label for="typeProd">Tipo de Actividad</label>
+                    <select name="typeProd" id="typeProd" class="inputEditProdType">
+                        <option value="actJov">Actividad Jóvenes</option>
+                        <option value="actMuj">Actividad Mujeres</option>
+                        <option value="actPar">Actividad Parejas</option>
+                        <option value="seude">Cena/Almuerzo</option>
+                        <option value="curso">Curso</option>
+                        <option value="jag">Jaguím / Festividades</option>
+                        <option value="shiur">Shiur / Clase / Charla</option>
+                        <option value="viaje">Viaje</option>
+                    </select>
+                    <br>
+                    <label for="nameProd">Nombre de la Actividad</label>
+                    <input type="text" name="nameProd" id="nameProd">
+                    <br>
+                    <label for="descrProd">Descripción de la Actividad</label>
+                    <br>
+                    <textarea name="descrProd" id="descrProd" cols="30" rows="10" placeholder="Ingrese la descripcion de la actividad, texto motivador y explicando en que consiste"></textarea>
+                    <br>
+                    <label for="dateProd">Fecha de la Actividad</label>
+                    <input type="date" name="dateProd" id="dateProd">
+                    <br>
+                    <label for="timeProd">Horario de la Actividad</label>
+                    <input type="time" name="timeProd" id="timeProd">
+                    <br>
+                    <label for="costProd">Costo de la Actividad</label>
+                    <input type="number" name="costProd" id="costProd" placeholder="$">
+                    <br>
+                    <label for="imageProd">Imagen o Flyer de la Actividad</label>
+                    <input type="file" name="imageProd" id="imageProd" accept=".jpg,.png,.gif">
+                    <br>
+
+                    <button type="submit">BUSCAR</button>
+
+                </form>
+                <br><br><br>
+
+                <h2>2. Busqueda de actividad para modificar o eliminar</h2>
+                <br>
+                <form action="/" method="put">
+                    <label for="IDProd">Codigo de Actividad</label>
+                    <input type="number" name="IDProd" id="IDProd">
+                    <br>
+                    <label for="typeProd">Tipo de Actividad</label>
+                    <select name="typeProd" id="typeProd" class="inputEditProdType">
+                        <option value="actJov">Actividad Jóvenes</option>
+                        <option value="actMuj">Actividad Mujeres</option>
+                        <option value="actPar">Actividad Parejas</option>
+                        <option value="seude">Cena/Almuerzo</option>
+                        <option value="curso">Curso</option>
+                        <option value="jag">Jaguím / Festividades</option>
+                        <option value="shiur">Shiur / Clase / Charla</option>
+                        <option value="viaje">Viaje</option>
+                    </select>
+                    <br>
+                    <label for="nameProd">Nombre de la Actividad</label>
+                    <input type="text" name="nameProd" id="nameProd">
+                    <br>
+                    <label for="dateProd">Fecha de la Actividad</label>
+                    <input type="date" name="dateProd" id="dateProd">
+                    <br>
+                    <button type="submit">BUSCAR</button>
+
+                </form>
+                <br><br><br>
+
+                <h2>3. Modificar o Eliminar Actividad</h2>
+                <h4>Ingrese en cada campo el valor nuevo y luego presione el botón de Modificar</h4>
+                <br>
+                <form action="/" method="put">
+                    <label for="typeProd">Tipo de Actividad</label>
+                    <select name="typeProd" id="typeProd" class="inputEditProdType">
+                        <option value="actJov">Actividad Jóvenes</option>
+                        <option value="actMuj">Actividad Mujeres</option>
+                        <option value="actPar">Actividad Parejas</option>
+                        <option value="seude">Cena/Almuerzo</option>
+                        <option value="curso">Curso</option>
+                        <option value="jag">Jaguím / Festividades</option>
+                        <option value="shiur">Shiur / Clase / Charla</option>
+                        <option value="viaje">Viaje</option>
+                    </select>
+                    <br>
+                    <label for="nameProd">Nombre de la Actividad</label>
+                    <input type="text" name="nameProd" id="nameProd">
+                    <br>
+                    <label for="descrProd">Descripción de la Actividad</label>
+                    <br>
+                    <textarea name="descrProd" id="descrProd" cols="30" rows="10" placeholder="Ingrese la descripcion de la actividad, texto motivador y explicando en que consiste"></textarea>
+                    <br>
+                    <label for="dateProd">Fecha de la Actividad</label>
+                    <input type="date" name="dateProd" id="dateProd">
+                    <br>
+                    <label for="timeProd">Horario de la Actividad</label>
+                    <input type="time" name="timeProd" id="timeProd">
+                    <br>
+                    <label for="costProd">Costo de la Actividad</label>
+                    <input type="number" name="costProd" id="costProd" placeholder="$">
+                    <br>
+                    <label for="imageProd">Imagen o Flyer de la Actividad</label>
+                    <input type="file" name="imageProd" id="imageProd" accept=".jpg,.png,.gif">
+                    <br>
+
+                    <button type="submit">MODIFICAR</button>
+                    <button type="submit">ELIMINAR</button>
+
+                </form>
+                <br><br><br>
+
+
+
+
+
+               
+            </main>
+
+
+
+            <footer>
+                <%- include ('./partials/footer.ejs')%>
+            </footer>
+</body>
+
+
+</body>
+</html>
