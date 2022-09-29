@@ -3,8 +3,8 @@
 
 <head>
     <%- include ('./partials/head.ejs')%>
-
-    <title>Suscripciones</title>
+    <link rel="stylesheet" href="../css/estilos-cart.css">
+    <title>Carrito</title>
 </head>
 <body class="tipografia">
     <header class="encabezado">
@@ -13,9 +13,7 @@
         <button type="button" class="cerrarVentana">      
             <i class="fa-solid fa-xmark"></i>
         </button>
-
-  
-      
+<br><br><br>
         <h2 class="titulo">Mis Suscripciones en curso</h2>
     </header>
     <main class="principal">
@@ -29,22 +27,11 @@
             <br><br>
             <input type="text" name="clave" id="clave" class="celda"> 
         </div>
-        <div class="olvido">
-            <a href="#" class="olvidolink">¿Olvidaste la contraseña?</a>
-        </div>
-        <div class="ingresar">
-            <button type="submit" class="boton-ingresar">INGRESAR</button>
-        </div>
-        <div class="recordar">
-            <input type="checkbox" name="recordar" id="recordar">
-            <label for="recordar">RECORDAR MIS DATOS</label>
-        </div>
+        
+        
+        
     </main>
-    <footer class="footer-login">
-        <label for="registro" class="registro">¿AÚN NO ESTÁS REGISTRADO?</label>
-        <br><br>
-        <a href="/register" class="registro-link">CREÁ TU CUENTA AQUÍ</a>
-    </footer>
+    
 </body>
 
 
