@@ -3,38 +3,83 @@
 
 <head>
     <%- include ('./partials/head.ejs')%>
-    <link rel="stylesheet" href="../css/estilos-cart.css">
-    <title>Carrito</title>
+        <link rel="stylesheet" href="../css/estilos-cart.css">
+        <title>Carrito</title>
+        <a href="https://www.flaticon.es/iconos-gratis/pareja" title="pareja iconos">Pareja iconos creados por Sudowoodo
+            - Flaticon</a>
 </head>
+
 <body class="tipografia">
-    <header class="encabezado">
+    <headerLogin class="encabezado">
         <p class="bh">B"H</p>
-        <img src="/images/logotransp.png" alt="logo JABA" class="logo">
-        <button type="button" class="cerrarVentana">      
+        <img src="/images/logotransp.png" alt="logo JABA" class="logoLogin" width="50%">
+
+        <button type="button" class="cerrarVentana">
             <i class="fa-solid fa-xmark"></i>
         </button>
-<br><br><br>
-        <h2 class="titulo">Mis Suscripciones en curso</h2>
-    </header>
-    <main class="principal">
-        <div class="curso1">
-            <i class="fa-solid fa-menorah"></i>
-            <p>Curso</p> aca va a decir el tipo de curso. 
-            Tipos: Actividad / Curso / Taller 
-        </div>
-        <div class="formu2">
-            <label for="clave">CONTRASEÑA</label>
-            <br><br>
-            <input type="text" name="clave" id="clave" class="celda"> 
-        </div>
-        
-        
-        
+
+
+
+        <h2 class="titulo">CARRITO DE SUSCRIPCIONES</h2>
+    </headerLogin>
+    <main>
+        <section class="principal">
+            <div class="carritoProd">
+                <div class="carritoTypeDiv">
+                    <i class="fa-solid fa-book"></i>
+                    <p class="carritoType">Shiur/Clase/Charla</p>
+                </div>
+                <div class="carritoNameDiv">
+                    <h2>Shiur Semanal de Tania</h2>
+                </div>
+                <div class="carritoDetailsDiv">
+                    <div class="carritoDetail">22/Oct/2022</div>
+                    <div class="carritoDetail">19hs</div>
+                    <div class="carritoDetail">$600</div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="carritoProd">
+                <div class="carritoTypeDiv">
+                    <i class="fa-solid fa-house-chimney-window"></i>
+                    <p class="carritoType">Actividad Parejas</p>
+                </div>
+                <div class="carritoNameDiv">
+                    <h2>Shiur Semanal de Tania</h2>
+                </div>
+                <div class="carritoDetailsDiv">
+                    <div class="carritoDetail">22/Oct/2022</div>
+                    <div class="carritoDetail">19hs</div>
+                    <div class="carritoDetail">$600</div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <div class="carritoProd">
+                <div class="carritoTypeDiv">
+                    <i class="fa-solid fa-hanukiah"></i>
+                    <p class="carritoType">Jaguím/Festividades</p>
+                </div>
+                <div class="carritoNameDiv">
+                    <h2>Shiur Semanal de Tania</h2>
+                </div>
+                <div class="carritoDetailsDiv">
+                    <div class="carritoDetail">22/Oct/2022</div>
+                    <div class="carritoDetail">19hs</div>
+                    <div class="carritoDetail">$600</div>
+                </div>
+                <br>
+            </div>
+
+        </section>
+        <section class="principal">
+            <div class="carritoSubto">
+                <p>Subtotal</p>
+                <p>$1800</p>
+            </div>
+        </section>
     </main>
-    
 </body>
-
-
-
 
 </html>
