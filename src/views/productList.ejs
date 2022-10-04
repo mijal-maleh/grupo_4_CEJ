@@ -2,14 +2,38 @@
 <html lang="en">
     <head>
     <%- include ('./partials/head.ejs')%>
+    
+    <link rel="stylesheet" href="../css/estilos-productDetail.css">
+
     <title>Pagina principal de Actividades</title>
+
 </head>
 
 <%- include ('./partials/header.ejs')%>
 <%- include ('./partials/main-header.ejs')%>
 <body>
-    
-   hola
+    <section>
+        <% products.forEach (product=> { %>
+            <article class="">
+                <div class="">
+                    <% let rutaProd = "/productDetail/:" + product.id%>
+                    <a href=<%= rutaProd %>> 
+                        <img width="150" height="150" src=<%=product.imagenActividad %> alt=<%= product.photo_name %> >
+                    </a>
+                    <div class="">
+                        <%= product.iconotipoAct %>
+                        <%= product.tipoActividad %>
+                        <%= product.nombreActividad %>
+                        <%= product.fechaActividad %>
+                        <%= product.horaActividad %>
+                        $<%= product.costoActividad %>
+                    </div> 
+                </div>
+            </article>
+            <% }) %>
+    </section>
+
+        
 </body>
 <%- include ('./partials/footer.ejs')%>
 </html>
