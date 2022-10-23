@@ -9,18 +9,16 @@
     width: 90%;
     max-height: 50%;
     margin: auto;
-    /*     border: #a4a5a7 solid 1px; */
-
     overflow: hidden;
     height: 100%;
     margin: 0px auto 0px;
     border: #a4a5a7 solid 2px;
     justify-content: center;
- /*    position: relative; */
     bottom: 20px;
     text-align: center;
 }
-.descrArt2{
+
+.descrArt2 {
     display: none;
 }
 
@@ -143,7 +141,6 @@ input {
     width: 100%;
     height: 15vh;
     overflow-x: scroll;
-
     scroll-snap-type: x mandatory;
 }
 
@@ -154,6 +151,7 @@ input {
 
     scroll-snap-align: center;
 }
+
 
 @media (min-width:481px) {
 
@@ -197,7 +195,7 @@ input {
     .detalleArt {
         position: relative;
         top: 20px;
-        right: 25vw;
+        right: 24vw;
         width: 50%;
         height: 60%;
     }
@@ -210,8 +208,9 @@ input {
         height: 55%;
         border: none;
         padding-right: 30px;
-      
+
     }
+
     p.ofertaP {
         font-size: 10px;
         padding-top: 0px;
@@ -229,33 +228,37 @@ input {
     .accionesArt {
         width: 100%;
     }
-.descrArt{
-    display: none;
-}
+
+    .descrArt {
+        display: none;
+    }
+
     .descrArt2 {
         border: #894243 solid;
         display: block;
         position: relative;
         top: 20px;
-        width: 75%;   
+        width: 75%;
     }
-    
-    .descrArtTitulo{
+
+    .descrArtTitulo {
         padding: 0 0 10px 10px;
         text-align: left;
     }
+
     .descrArt2 p {
         font-size: 16px;
-     padding: 0 10px 0px 10px ;
+        padding: 0 10px 0px 10px;
         padding-top: 0px;
         margin-bottom: 40px;
     }
 
     .precioTitulo,
 
-    .descrArtTitulo{
+    .descrArtTitulo {
         font-size: 20px;
     }
+
     .footerTitulo {
         position: absolute;
         top: 20px;
@@ -291,5 +294,5 @@ input {
 
         scroll-snap-align: center;
     }
-    
+
 }

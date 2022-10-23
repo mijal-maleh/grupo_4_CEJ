@@ -1,11 +1,3 @@
-/*Codigos de colores: Amarillo: #fed522 Gris: #a4a5a7 Bordo: #894243
-background-color: rgba(77,77,77,0.03);
-
-
-agregar normalize.css?
-
-agregar https://fontawesome.com/icons?d=gallery&m=free
-
 /*ESTILOS DE LA PAGINA DE LOGIN*/
 
 /*ESTILOS DEL BODY*/
@@ -14,56 +6,43 @@ agregar https://fontawesome.com/icons?d=gallery&m=free
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgba(77,77,77,0.03);
+body {
+    background-color: rgba(77, 77, 77, 0.03);
     color: #4b4b4b;
 }
 
 /*ESTILOS DEL HEADER*/
-.bh{
+.bh {
     position: fixed;
-    top: 3px;
+    top: 12px;
     left: 12px;
     color: #4b4b4b;
 }
 
 .encabezado {
     margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    
 }
+
 .cerrarVentana {
     position: fixed;
     top: 12px;
     right: 12px;
-    /* border: 1px solid #a4a5a7 ; */
+    border: 1px solid #a4a5a7;
     background-color: #fed522;
-    color: #ffffff;
-    border: none;
-}
-.cerrarVentana:hover {
-    background-color: #fead22;
-}
-
-.logoDivL{
-   width: 30%; 
-   height: 100%;
-   border: yellowgreen solid 2px;
 }
 
 .logoLogin {
-
-    border: red solid 2px;
+    width: 35%;
+    display: block;
+    margin: auto;
 }
 
 .titulo {
-   text-align: center;
-   margin-top: auto;
-   padding-bottom: 20px;
-   padding-right: 20px;
-
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 20px;
 }
+
 /*ESTILOS DEL MAIN*/
 .principal {
     background-color: #ffffff;
@@ -72,40 +51,47 @@ body{
     padding: 25px 15px;
     font-size: small;
     margin-bottom: 25px;
-    box-shadow: 0px 0px 10px  #a4a5a7;
+    box-shadow: 0px 0px 10px #a4a5a7;
     border-radius: 5px;
 }
+
 .formu1 {
-   padding-bottom: 25px;
-   width: 100%;
-   display: block;
-   border-radius: 5px;
+    padding-bottom: 25px;
+    width: 100%;
+    display: block;
+    border-radius: 5px;
 }
-.celda{
+
+.celda {
     width: 100%;
     display: block;
 }
+
 .formu2 {
     padding-bottom: 8px;
     width: 100%;
     display: block;
     border-radius: 5px;
- }
-.olvido{
-   text-align: right;
-   padding-bottom: 17px;
 }
-.olvidolink{
+
+.olvido {
+    text-align: right;
+    padding-bottom: 17px;
+}
+
+.olvidolink {
     color: #fed522 !important;
 }
-.ingresar{
+
+.ingresar {
     width: 100%;
     display: block;
     text-align: center;
     padding-bottom: 25px;
-    
+
 }
-.boton-ingresar{
+
+.boton-ingresar {
     background-color: #fed522;
     border: none;
     padding: 15px;
@@ -121,20 +107,22 @@ body{
 
 /*ESTILOS DEL FOOTER*/
 .footer-login {
-margin-top: 10px;
-background-color: #ffffff;
-width: 90%;
-margin: auto;
-padding:  15px;
-font-size: small;
-text-align: center;
-box-shadow: 0px 0px 10px  #a4a5a7;
-margin-bottom: 50px ;
+    margin-top: 10px;
+    background-color: #ffffff;
+    width: 90%;
+    margin: auto;
+    padding: 15px;
+    font-size: small;
+    text-align: center;
+    box-shadow: 0px 0px 10px #a4a5a7;
+    margin-bottom: 50px;
 }
+
 .registro {
     margin: auto;
 }
-.registro-link{
+
+.registro-link {
     display: block;
     background-color: #fed522;
     border: none;
@@ -144,29 +132,38 @@ margin-bottom: 50px ;
     font-weight: bold;
     margin: auto;
     border-radius: 5px;
-    text-decoration: none ;
+    text-decoration: none;
     font-size: 10px;
 }
+
 .registro-link:hover {
     background-color: #fead22;
 }
 
 @media (min-width:769px) {
-    
+
     .registro-link {
         font-size: 14px;
     }
+
+    .logoLogin {
+        width: 20%;
+    }
 }
+
 @media (min-width:1280px) {
     .principal {
         width: 50%;
     }
+
     .footer-login {
         width: 50%;
     }
-    .boton-ingresar{
+
+    .boton-ingresar {
         width: 20vw;
     }
+
     .registro-link {
         width: 20vw;
     }

@@ -2,9 +2,9 @@ const express = require ('express');
 const productController = require('../controllers/productController');
 const router = express.Router();
 
-router.get('/productDetail',productController.productDetail);
+router.get('/productDetail/:id',productController.productDetail);
 
-router.get('/productList',productController.productList);
+router.get('/productList/',productController.productList);
 
 router.get('/productCart',productController.productCart);
 

@@ -3,6 +3,11 @@
  QUE VOY A HACER HOY?
  CONCLUSIONES
 
+29/9
+Malka
+hice el json de productos y la vista de productEdit
+desafios: pense que iba a ser mas rapido, no se si lo hice bien espero la magia de EJS para ver como va a quedar todo con la funcionalidad aplicada
+
 14/9
 Malka
  QUE HICE AYER?

@@ -1,0 +1,58 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: questrial;
+}
+
+.prodListMain,
+.title {
+    margin: 20px;
+}
+
+.sectionTitlePL {
+    display: block;
+    padding: 10px;
+}
+
+.prodSection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.article {
+    border: #a4a5a7 solid 1px;
+    display: block;
+    width: 43vw;
+    padding: 10px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.imgProdList {
+    width: 38vw;
+    height: 29vw;
+}
+
+.detProdList {
+    padding: 5px
+}
+
+.nameProdList {
+    font-weight: bold;
+}
+
+
+@media (min-width: 481px) {
+
+    .article {
+        width: 200px; 
+    }
+    .imgProdList {
+        width: 180px; 
+        height: 180px;
+    }
+}
+

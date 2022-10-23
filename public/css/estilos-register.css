@@ -1,12 +1,4 @@
-/*Codigos de colores: Amarillo: #fed522 Gris: #a4a5a7 Bordo: #894243
-background-color: rgba(77,77,77,0.03);
-
-
-agregar normalize.css?
-
-agregar https://fontawesome.com/icons?d=gallery&m=free
-
-/*ESTILOS DE LA PAGINA DE LOGIN*/
+/*ESTILOS DE LA PAGINA DE REGISTER*/
 
 /*ESTILOS DEL BODY*/
 * {
@@ -20,42 +12,38 @@ body{
 }
 
 /*ESTILOS DEL HEADER*/
-.bh{
+.bh {
     position: fixed;
-    top: 3px;
-    left: 7px;
+    top: 12px;
+    left: 12px;
     color: #4b4b4b;
 }
 
 .encabezado {
     margin: auto;
-    
+
 }
+
 .cerrarVentana {
     position: fixed;
     top: 12px;
     right: 12px;
-    /* border: 1px solid #a4a5a7 ; */
+    border: 1px solid #a4a5a7;
     background-color: #fed522;
-    color: #ffffff;
-    border: none;
-}
-.cerrarVentana:hover {
-    background-color: #fead22;
 }
 
-.logo {
+.logoRegister {
     width: 35%;
     display: block;
     margin: auto;
 }
 
 .titulo {
-   text-align: center;
-   margin-top: auto;
-   padding-bottom: 20px;
-
+    text-align: center;
+    margin-top: auto;
+    padding-bottom: 20px;
 }
+
 /*ESTILOS DEL MAIN*/
 .principal {
     background-color: #ffffff;
@@ -165,7 +153,12 @@ margin-bottom: 50px ;
     .footer-register {
         width: 50%;
     }
+    
+    .logoRegister {
+        width: 20%;
+    }
 }
+
 @media (min-width:1280px) {
     .principal {
         width: 30%;
