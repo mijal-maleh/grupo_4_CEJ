@@ -34,7 +34,8 @@ p {
     position: absolute;
     padding-bottom:7px;
     z-index: 0;
-    /*display:none;*//*
+    /*display:none;*/
+/*
 }
 
 .barrabusqueda {
@@ -66,7 +67,8 @@ p {
 }
 .categorias a {
     text-decoration: none;
-    /*margin-left:10px;*//*
+    /*margin-left:10px;*/
+/*
     border-left: solid #fed522 5px;
     padding: 10px;
     font-size: 20px;
@@ -95,8 +97,8 @@ p {
     display: inline-flex;
     flex-direction:row-reverse;
     /*margin-left: 88%;
-    width: 50px; */  
-  /*  width:100%;  /*para q ocupe todo el ancho de la fila*/
+    width: 50px; */
+/*  width:100%;  /*para q ocupe todo el ancho de la fila*/
 /*}
 
 
@@ -139,27 +141,32 @@ p {
 body {
     background-color: rgba(77, 77, 77, 0.03);
 }
-main{
-    background-color: rgba(77, 77, 77, 0.03); ;
+
+main {
+    background-color: rgba(77, 77, 77, 0.03);
 }
-H1{
+
+H1 {
     font-weight: bolder;
     font-style: oblique;
     text-align: center;
     padding-top: 10px;
-    background-color:rgba(77, 77, 77, 0.03); 
-    margin-bottom:15px;
+    padding-bottom: 10px;
+    background-color: rgba(77, 77, 77, 0.03);
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
+
 /*SLIDER*/
 
 
 .slider {
     width: 100%;
     overflow: hidden;
-    height:  60vw;
-    margin:0px auto 0px;
+    height: 60vw;
+    margin: 0px auto 0px;
     border: #a4a5a7 solid 2px;
-   /* display: inline-block;*/
+    /* display: inline-block;*/
     justify-content: center;
     bottom: 20px;
     /*animation: cambio 20s infinite alternate ease-in-out;*/
@@ -179,15 +186,16 @@ H1{
     display: flex;
 }
 
-.slider li p{
+.slider li p {
     font-size: 15px;
 }
+
 .slider img {
     width: 60%;
     height: 100%;
     object-fit: cover;
     margin-bottom: 10px;
-    position:relative;
+    position: relative;
 }
 
 .slider ul li h4,
@@ -195,22 +203,21 @@ p {
     text-align: center;
 
 }
+
 /*******analizar txt********************/
 .slider li .txt {
     width: 40%;
     display: flex;
-    flex-direction:column;
-    margin-left:22px;
+    flex-direction: column;
+    margin-left: 22px;
     margin-top: 3px;
     align-items: center;
-    justify-content:center;
-    position:relative;
+    justify-content: center;
+    position: relative;
     right: 20px;
     padding-left: 10px;
-    padding-right:10px ;
+    padding-right: 10px;
     font-size: 18px;
-
-    
 }
 
 
@@ -256,7 +263,12 @@ p {
     }
 
 }
-.datos-semanales2{
+
+.datos-semanales2 {
+    display: none;
+}
+
+.cronograma {
     display: none;
 }
 
@@ -264,17 +276,16 @@ p {
 
 
 .destacados-de-la-semana {
-    margin-top: 10px; 
+    margin-top: 30px;
     border: #894243 solid;
     width: 100%;
-    /*height: 10%;*/
     background-color: #ffffff;
 }
 
 h3 {
-    text-align:center;
+    text-align: center;
     font-size: 20px;
-    
+    padding-top: 5px;
 }
 
 h6 {
@@ -283,7 +294,7 @@ h6 {
 
 .destacados-de-la-semana p {
     font-size: 12px;
-    text-align:center
+    text-align: center
 }
 
 .info {
@@ -291,15 +302,18 @@ h6 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding-left: 10px;
+    padding-left: 60px;
 }
 
-.curso1 {
+.curso1,
+.curso2 {
     border: #f3ba0c solid 2px;
     margin-top: 15px;
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 90px;
+   
 }
 
 .amasado img {
@@ -307,15 +321,6 @@ h6 {
     height: 100%;
 }
 
-
-.curso2 {
-    border: #f3ba0c solid 2px;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-start;
-}
 
 .curso img {
     width: 100px;
@@ -325,19 +330,21 @@ h6 {
 /*-----------------------------scroll fotos horozontal(sin scroll)--------------------*/
 
 .scroll-fotos {
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     width: 100%;
-    height:30vw;
+    height: 20vw;
+    border-top: #a4a5a7 solid 2px;
+    border-bottom: #a4a5a7 solid 2px;
     overflow: hidden;
-   /* border: #a4a5a7 solid 2px;*/
 }
 
 .scroll-fotos img {
     width: 100%;
-    height: 100%;
+    height: 20vw;
     object-fit: cover;
 }
 
@@ -361,12 +368,16 @@ h6 {
         height: 200px;
         top: -10px;
     }
+    .menu-cel i {
+        display: none;
+    }
     
     .categorias {
         display: flex;
         padding-bottom: 6px;
         padding-top: 6px;
-        /*top:1px;*//*
+        /*top:1px;*/
+    /*
     }
     .categorias a{
         padding-left: 5px;
@@ -377,91 +388,121 @@ h6 {
     .datos-semanales{
         display: none;
     }*/
-    .datos-semanales2{
+
+    .contenedor-mayor {
         display: flex;
-        flex-direction:column;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .slider {
+        width: 80%;
+        flex-direction: row-reverse;
+    }
+
+    .lateral-izq {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+
+    .lateral-izq section {
+        width: 33vw;
+        height: 250px;
+    }
+.img-velas{
+    display:none;
+}
+    .datos-semanales2 {
+        display: flex;
+        flex-direction: column;
         text-align: center;
         justify-content: center;
-        width: 35%;
         border: #894243 solid;
-        height: 210px;
-        background-image:"images/velas.webp";
-    }
-    .img-velas{
-        width:80%;
-        display:none;
+        background-image: url('../images/velas.webp');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;   
+        width: 100%;     
     }
 
-.datos-semanales2 p{
-    font-size: 15px;
-    margin-bottom: 5px;
-    bottom:300px;
-}
-.semana-parshe{
-    font-weight:bold;
-}
+  
+      
 
-    .menu-cel i {
+    .datos-semanales2 p {
+        font-size: 15px;
+        /*margin-bottom: 5px;*/
+        bottom: 300px;
+    }
+
+    .semana-parshe {
+        font-weight: bold;
+    }
+
+
+    .cronograma {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        border: #894243 solid;
+        margin-bottom: 0px;
+    }
+
+    .img-cronograma {
+        width: 10%;
+    }
+
+    .destacados-de-la-semana {
+        padding: 0%;
+        margin-top: 0%;
+    }
+
+    .destacados-de-la-semana p {
         display: none;
     }
 
-    .cronograma{
-        display: flex;
-        flex-direction:column;
-        text-align: center;
-        justify-content: center;
-        width: 35%;
-        border: #894243 solid;  
-        height: 210px;
-    }
-    .img-cronograma{ 
-        width:100%;
+    .curso1,
+    .curso2 {
+        height: 40px;
+        margin-top: 5px;
+
     }
 
+    .destacados-de-la-semana h6 {
+        font-size: 10px;
+        ;
+    }
 
-
-
-
-
-    .slider{
-    width:60%;
-    flex-direction: row-reverse;
+    .destacados-de-la-semana h3 {
+        padding-top: 10px;
+        font-size: 15px;
+    }
     
-   
-}
-
-
-    .destacados-de-la-semana {
-        width: 35%;
+    .destacados-de-la-semana img {
+        width: 50px;
+       
     }
-.destacados-de-la-semana p{
-    display:none;
-}
-.destacados-de-la-semana h6{
-    font-size:10px;
-}
-
-.destacados-de-la-semana img{
-    width:70px;
-}
+    
     .scroll-fotos img {
         width: 33%;
     }
-
+    
 }
 
 /*-------------------------media deskptop-----------------------*/
 
 @media (min-width:1200px) {
-    .categorias {
-        /*font-size: 30px;*/
+
+    /*
+   .categorias {
         padding: 0%;
     }
 .categorias a{
     padding-left: 10px;
     padding-right: 10px;
     font-size: 20px;
-}
+}*/
     .destacados-de-la-semana {
         border: #894243 solid;
         width: 25%;
@@ -469,9 +510,17 @@ h6 {
         font-size: 12px;
     }
 
+    .curso1,
+    .curso2 {
+        height: 45px;
+        margin-top: 5px;
+
+    }
+
     h6 {
         font-size: 15px;
         text-align: center;
+        align-self: auto;
     }
 
     .info {
@@ -479,9 +528,43 @@ h6 {
         padding-right: 20px;
     }
 
+    .contenedor-mayor {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        max-height: 600px;
+        max-width: 1300px;
+        margin-bottom:50px ;
+    }
+
+    .slider {
+        width: 65%;
+        max-height: 600px;
+        flex-direction: row-reverse;
+        margin-left: 60px;
+    }
+
+    .lateral-izq {
+        display: flex;
+        flex-direction: column;
+        max-height: 600px;
+margin-left: 40px;
+margin-top: 0%;
+    }
+
+    .lateral-izq section {
+        width: 100%;
+        height: 20vw;
+    }
+
+
+.scroll-fotos{
+    max-height: 100vw;
+}
+
     .scroll-fotos img {
         width: 20%;
-        max-height: 10%;
+        max-height:20vw;
     }
 
 }
