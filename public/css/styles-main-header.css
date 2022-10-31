@@ -22,7 +22,9 @@
     display: none;
 }
 
-
+.izquierda {
+    justify-content: center !important;
+}
 
 .menu-cel i {
     color: #fed522;
