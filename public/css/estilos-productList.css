@@ -13,6 +13,7 @@
 .sectionTitlePL {
     display: block;
     padding: 10px;
+    width: 100%;
 }
 
 .prodSection {
@@ -48,11 +49,11 @@
 @media (min-width: 481px) {
 
     .article {
-        width: 200px; 
+        width: 200px;
     }
+
     .imgProdList {
-        width: 180px; 
+        width: 180px;
         height: 180px;
     }
 }
-

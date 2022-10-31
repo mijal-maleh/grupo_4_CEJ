@@ -4,138 +4,7 @@
     box-sizing: border-box;
 }
 
-/*estilos home*/
 
-/*HEADER*/
-
-/*header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #a4a5a7;
-    height: 100px;
-    width: 100%;
-    border-bottom: 4px #fed522 solid;
-    position: relative;
-}
-
-p {
-    top: 3px;
-    left: 12px;
-    color: #4b4b4b;
-    font-size: 10px;
-    font-family: questrial;
-}
-
-.logo {
-    width: 170px;
-    height: 170px;
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    padding-bottom:7px;
-    z-index: 0;
-    /*display:none;*/
-/*
-}
-
-.barrabusqueda {
-    display: none;
-}
-
-.iconos {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-    width: 200px;
-    font-size: 30px;
-}
-
-.iconos i {
-    color: #d3d3d3;
-    margin-right: 5px;
-}
-
-.iconos i:hover {
-    color: #fed522;
-}
-
-
-/*MAIN-header*/
-/*
-.main-header{
-    background-color: rgba(77, 77, 77, 0.03);  
-}
-.categorias a {
-    text-decoration: none;
-    /*margin-left:10px;*/
-/*
-    border-left: solid #fed522 5px;
-    padding: 10px;
-    font-size: 20px;
-    
-}
-
-.categorias {
-    display: flex;
-    justify-content: flex-end;
-    background-color: #d3d3d3;
-    margin-top: 8px;
-    font-size: 15px;
-    width: 100%;
-    display: none;
-}
-
-
-
-.menu-cel i {
-    color: #fed522;
-    background-color: #d3d3d3;
-    font-size: 30px;
-    border: #a4a5a7 solid 1px;
-    padding: 10px;
-    margin-top: 8px;
-    display: inline-flex;
-    flex-direction:row-reverse;
-    /*margin-left: 88%;
-    width: 50px; */
-/*  width:100%;  /*para q ocupe todo el ancho de la fila*/
-/*}
-
-
-
-.datos-semanales {
-    position: relative;
-    display: inline-flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin-left: 50%;
-    bottom: 53px;
-    padding: 1px 3px 5px 5px;
-    
-}
-
-.datos-semanales img {
-    height: 50px;
-    position: absolute;
-    opacity: 50%;
-    top: 2px;
-    
-}
-
-.datos-semanales p {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:column;
-    text-align: center;
-    z-index: 5;
-    color: #4d4d4d;
-    left: 100px;
-    bottom: 5px;
-    padding-top: 5px;
-    padding-left: 10px;
-}
-*/
 /*BODY*/
 
 body {
@@ -168,15 +37,19 @@ H1 {
     border: #a4a5a7 solid 2px;
     /* display: inline-block;*/
     justify-content: center;
+    
     bottom: 20px;
-    /*animation: cambio 20s infinite alternate ease-in-out;*/
-    background-color: rgba(77, 77, 77, 0.03);
+      background-color: rgba(77, 77, 77, 0.03);
 }
-
 
 .slider ul {
     width: 500%;
     display: flex;
+    animation-name: cambio;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: infinite alternate ease-in-out;
+  
 }
 
 .slider li {
@@ -193,7 +66,7 @@ H1 {
 .slider img {
     width: 60%;
     height: 100%;
-    object-fit: cover;
+    object-fit:scale-down;
     margin-bottom: 10px;
     position: relative;
 }
@@ -220,6 +93,10 @@ p {
     font-size: 18px;
 }
 
+.ulSlider {
+display: flex;
+flex-direction: row ;
+}
 
 @keyframes cambio {
     0% {
@@ -348,7 +225,9 @@ h6 {
     object-fit: cover;
 }
 
+.scroll-fotos2 {
 
+}
 
 
 
@@ -363,41 +242,18 @@ h6 {
 
 @media (min-width:480px) {
 
-    /*.logo {
-        width: 200px;
-        height: 200px;
-        top: -10px;
-    }
-    .menu-cel i {
-        display: none;
-    }
-    
-    .categorias {
-        display: flex;
-        padding-bottom: 6px;
-        padding-top: 6px;
-        /*top:1px;*/
-    /*
-    }
-    .categorias a{
-        padding-left: 5px;
-        padding-right: 5px;
-        font-size: 15px;
-    }
-    
-    .datos-semanales{
-        display: none;
-    }*/
 
     .contenedor-mayor {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
+        
     }
 
     .slider {
         width: 80%;
         flex-direction: row-reverse;
+        background-image: url('./images/rebbe-fondo.jpg');
     }
 
     .lateral-izq {
