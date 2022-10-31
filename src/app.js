@@ -14,10 +14,10 @@ const usersRouter = require('./routes/usersRoutes');
 
 app.set("view engine", "ejs");
 app.set("views", [
-    path.join(__dirname,  "./views/main"),
-    path.join(__dirname,  "./views/products"),
-    path.join(__dirname,  "./views/users"),
-    path.join(__dirname,  "./views/partials"),
+    path.join(__dirname,  "/views/main"),
+    path.join(__dirname,  "/views/products"),
+    path.join(__dirname,  "/views/users"),
+    path.join(__dirname,  "/views/partials"),
 ])
 
 app.use(express.static(path.join(__dirname, "../public")))
@@ -30,9 +30,9 @@ app.use(session({secret:"Mashiaj ya", resave: false, saveUninitialized: false}))
 /* app.use(rememberMiddleware); */
 
 
-app.use('/product',productRouter);
-app.use('/', mainRouter);
-app.use('/users', usersRouter);
+app.use(productRouter);
+app.use(mainRouter);
+app.use(usersRouter);
 
 app.use((req,res,next)=> {
     res.status(404).render("error")

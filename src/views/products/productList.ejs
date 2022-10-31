@@ -18,56 +18,45 @@
             <div class="title">
                 <h1>Pagina principal de Actividades</h1>
             </div>
+
             <section class="prodListMain">
-                <div class="sectionTitlePL">
-                    <h2>Cursos</h2>
-                </div>
                 <div class="prodSection">
-                    <%products.forEach (product=> {
-                        if(product.tipoActividad == "Curso") { %>
-                        <article class="article">
-                            <% let rutaProd="productDetail" + "/:" + product.id%>
-                                <a href=<%=rutaProd %>>
-                                    <img class="imgProdList" width="150" height="150" src=<%=product.imagenActividad %>
-                                    alt=<%= product.photo_name %> >
-                                </a>
-                                <div class="detProdList">
-                                    <i class=" <%= product.iconoTipoAct %>"></i>
-                                    <%= product.tipoActividad %> <br>
-                                       <div class="nameProdList"><%= product.nombreActividad %></div>  <br>
-                                            <%= product.fechaActividad %> <br>
-                                                <%= product.horaActividad %> <br>
-                                                    $<%= product.costoActividad %>
-                                </div>
-                        </article>
-                        <%} }) %>
-                </div>
-                <div class="sectionTitlePL">
-                    <h2>Actividades y Eventos</h2>
-                </div>
-                <div class="prodSection">
-                    <%products.forEach (product=> {
-                        if(product.tipoActividad !== "Curso") { %>
-                        <article class="article">
-                            <% let rutaProd="/productDetail/:" + product.id%>
-                                <a href=<%=rutaProd %>>
-                                    <img class="imgProdList" width="150" height="150" src=<%=product.imagenActividad %>
-                                    alt=<%= product.photo_name %> >
-                                </a>
-                                <div class="detProdList">
-                                    <i class=" <%= product.iconoTipoAct %>"></i>
-                                    <%= product.tipoActividad %> <br>
-                                        <div class="nameProdList"><%= product.nombreActividad %> </div><br>
-                                            <%= product.fechaActividad %> <br>
-                                                <%= product.horaActividad %> <br>
-                                                    $<%= product.costoActividad %>
-                                </div>
-                        </article>
-                        <%} }) %>
+                    <% let tipos= []
+                        if (tipo=="All" ) { %>
+                        <% tipos=["Clases", "Eventos" , "Cursos" , "Festividades" , "Viajes" ] %>
+                    <% }else{ %>
+                        <% tipos=[ tipo ] %>
+                    <% } %> 
+                    <%tipos.forEach (tipoElemento=> { %>
+                        <div class="article">
+                        <div class="sectionTitlePL">
+                            <h2> <%= tipoElemento %> </h2>
+                        </div>
+                        <% let productsNow = products %>
+                            <% productsNow = productsNow.filter(product=> product.tipoActividad == tipoElemento)%>
+                            <%productsNow.forEach (product=> { %>
+                            <article class="article">
+                                                    <% let rutaProd="productDetail" + "/:" + product.id%>
+                                                        <a href="<%=rutaProd %>">
+                                                            <img class="imgProdList" width="150" height="150"
+                                                                src="<%=product.imagenActividad %>"
+                                                                alt="<%= product.photo_name %>">
+                                                        </a>
+                                                        <div class="detProdList">
+                                                            <i class=" <%= product.iconoTipoAct %>"></i>
+                                                            <%= product.tipoActividad %> <br>
+                                                                <div class="nameProdList">
+                                                                    <%= product.nombreActividad %>
+                                                                </div> <br>
+                                                                <%= product.fechaActividad %> <br>
+                                                                    <%= product.horaActividad %> <br>
+                                                                        $<%= product.costoActividad %>
+                                                        </div>
+                            </article>
+                        </div>
+                                                <% })}) %>
                 </div>
             </section>
-
-
         </body>
         <%- include ('../partials/footer.ejs')%>
 

@@ -18,7 +18,11 @@ const productController = {
   productList: (req, res) => {
     let archivoJSON = fs.readFileSync(path.join(__dirname, '../data/products.json'), 'utf-8');
     let products = JSON.parse(archivoJSON);
-    res.render("productList", { 'products': products })
+
+    let tipo = req.params.tipo;
+    
+    res.render("productList", { 'products': products , tipo})
+    console.log (tipo)
   },
 
   productCart: (req, res) => {
