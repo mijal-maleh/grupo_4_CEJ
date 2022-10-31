@@ -20,8 +20,16 @@
 
         <h2 class="titulo">CREA TU CUENTA EN JABA</h2>
     </headerLogin>
+
+
     <main class="principal">
         <div class="formu1">
+            <div class="text-danger">
+    <% if(locals.error){ error.forEach(errors=>{%>
+            <%= errors.msg %>
+        <%}) }%>
+    </div>  
+    <form action="/register" method="POST"> 
             <label for="nombre">NOMBRE</label>
             <br><br>
             <input type="text" name="nombre" id="nombre" class="celda">
@@ -44,17 +52,17 @@
         <div class="formu2">
             <label for="clave-control">REPETIR CONTRASEÑA</label>
             <br><br>
-            <input type="password" name="clave-control" id="clave-control" class="celda">
+            <input type="password" name="claveControl" id="claveControl" class="celda">
         </div>
         <div class="formu2">
             <label for="fecha-nac">FECHA DE NACIMIENTO</label>
             <br><br>
-            <input type="date" name="fecha-nac" id="fecha-nac" class="celda">
+            <input type="date" name="fechaNac" id="fecha-nac" class="celda">
         </div>
         <div class="formu2">
             <label for="fecha-nac-heb">FECHA DE NACIMIENTO EN HEBREO (opcional)</label>
             <br><br>
-            <input type="text" name="fecha-nac-heb" id="fecha-nac-heb" class="celda">
+            <input type="text" name="fechaNacheb" id="fecha-nac-heb" class="celda">
         </div>
         <div class="formu2">
             <label for="genero">GENERO</label>
@@ -93,11 +101,12 @@
                 <button type="reset" class="boton-reset">BORRAR</button>
             </div>
         </div>
+    </form>
     </main>
     <footer class="footer-register">
         <label for="login" class="registro">¿YA TENÉS UNA CUENTA?</label>
         <br><br>
-        <a href="/login" class="registro-link">INGRESÁ</a>
+        <a href="login" class="registro-link">INGRESÁ</a>
     </footer>
 </body>
 
