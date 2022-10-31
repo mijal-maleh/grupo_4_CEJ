@@ -5,8 +5,8 @@ const productController = {
 
   productDetail: (req, res) => {
     
-    let id = req.params.id
-
+    let id = Number(req.params.id)
+    console.log (id)
     let archivoJSON = fs.readFileSync(path.join(__dirname, '../data/products.json'), 'utf-8');
     let products = JSON.parse(archivoJSON);
     let productToShow
@@ -15,7 +15,7 @@ const productController = {
         productToShow = products[i]
       }
     }
-    res.render('productDetail' , productToShow);
+    res.render('productDetail' , {productToShow});
 
   },
 
