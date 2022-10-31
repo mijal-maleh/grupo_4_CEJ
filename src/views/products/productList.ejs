@@ -20,42 +20,48 @@
             </div>
 
             <section class="prodListMain">
-                <div class="prodSection">
-                    <% let tipos= []
-                        if (tipo=="All" ) { %>
-                        <% tipos=["Clases", "Eventos" , "Cursos" , "Festividades" , "Viajes" ] %>
-                    <% }else{ %>
-                        <% tipos=[ tipo ] %>
-                    <% } %> 
-                    <%tipos.forEach (tipoElemento=> { %>
-                        <div class="article">
-                        <div class="sectionTitlePL">
-                            <h2> <%= tipoElemento %> </h2>
-                        </div>
-                        <% let productsNow = products %>
-                            <% productsNow = productsNow.filter(product=> product.tipoActividad == tipoElemento)%>
-                            <%productsNow.forEach (product=> { %>
-                            <article class="article">
-                                                    <% let rutaProd="productDetail" + "/:" + product.id%>
-                                                        <a href="<%=rutaProd %>">
-                                                            <img class="imgProdList" width="150" height="150"
-                                                                src="<%=product.imagenActividad %>"
-                                                                alt="<%= product.photo_name %>">
-                                                        </a>
-                                                        <div class="detProdList">
-                                                            <i class=" <%= product.iconoTipoAct %>"></i>
-                                                            <%= product.tipoActividad %> <br>
-                                                                <div class="nameProdList">
-                                                                    <%= product.nombreActividad %>
-                                                                </div> <br>
-                                                                <%= product.fechaActividad %> <br>
-                                                                    <%= product.horaActividad %> <br>
-                                                                        $<%= product.costoActividad %>
-                                                        </div>
-                            </article>
-                        </div>
-                                                <% })}) %>
-                </div>
+
+                <% let tipos=[] %>
+                <%if (tipo=="All" ) { %>
+                    <% tipos=["Clases", "Eventos" , "Cursos" , "Festividades" , "Viajes" ] %>
+                        <% }else{ %>
+                            <% tipos=[ tipo ] %>
+                                <% } %>
+                                    <%tipos.forEach (tipoElemento=> { %>
+
+                                        <div class="sectionTitlePL">
+                                            <h2>
+                                                <%= tipoElemento %>
+                                            </h2>
+                                        </div>
+
+
+                                        <div class="prodSection">
+                                            <% let productsNow=products %>
+                                                <% productsNow=productsNow.filter(product=> product.tipoActividad ==
+                                                    tipoElemento)%>
+                                                    <%productsNow.forEach (product=> { %>
+                                                        <article class="article">
+                                                            <% let rutaProd="/productDetail/"+ product.id%>
+                                                                <a href="<%=rutaProd %>">
+                                                                    <img class="imgProdList" width="150" height="150"
+                                                                        src="<%=product.imagenActividad %>"
+                                                                        alt="<%= product.photo_name %>">
+                                                                </a>
+                                                                <div class="detProdList">
+                                                                    <i class=" <%= product.iconoTipoAct %>"></i>
+                                                                    <%= product.tipoActividad %> <br>
+                                                                        <div class="nameProdList">
+                                                                            <%= product.nombreActividad %>
+                                                                        </div> <br>
+                                                                        <%= product.fechaActividad %> <br>
+                                                                            <%= product.horaActividad %> <br>
+                                                                                $<%= product.costoActividad %>
+                                                                </div>
+                                                        </article>
+
+                                                        <% })}) %>
+                                        </div>
             </section>
         </body>
         <%- include ('../partials/footer.ejs')%>

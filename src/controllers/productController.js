@@ -4,14 +4,18 @@ const fs = require('fs')
 const productController = {
 
   productDetail: (req, res) => {
+    
     let id = req.params.id
 
     let archivoJSON = fs.readFileSync(path.join(__dirname, '../data/products.json'), 'utf-8');
     let products = JSON.parse(archivoJSON);
- 
-    products = products.filter (product => product.id == id);
-    productToShow = products [0];
-    return res.render('productDetail' , productToShow);
+    let productToShow
+    for (let i= 0; i< products.length; i++){
+      if (products[i].id == id){
+        productToShow = products[i]
+      }
+    }
+    res.render('productDetail' , productToShow);
 
   },
 
@@ -22,7 +26,6 @@ const productController = {
     let tipo = req.params.tipo;
     
     res.render("productList", { 'products': products , tipo})
-    console.log (tipo)
   },
 
   productCart: (req, res) => {
