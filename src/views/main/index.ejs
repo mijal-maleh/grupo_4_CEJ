@@ -99,7 +99,8 @@
                                         <div class="curso1">
                                             
                                                 <div class="amasado">
-                                                     <a href="/product/productDetail" <%= + product.id %> >
+                                                    <% let rutaDetail = "/productDetail/" + product.id  %> 
+                                                     <a href=<%= rutaDetail %> >
                                                       <img src= <%=product.imagenActividad %>  alt="">
                                                     </a>
                                             </div>

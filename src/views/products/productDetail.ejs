@@ -68,7 +68,9 @@
                     <br><br>
                     <section class="actionsArt">
                         <div class="botonesArt">
-                            <button class="buttonArt"><a href="">Editar la actividad</a></button>
+                            <% let rutaEdit = "/productEdit/" + productToShow.id   %> 
+                            <button class="buttonArt"><a href=<%=rutaEdit %> > Editar la actividad</a></button>
+                            <form action="<% rutaEdit %> "></form>
                             <button class="buttonArt"><a href="">Eliminar la actividad</a></button>
                         </div>
                     </section>
