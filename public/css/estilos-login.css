@@ -11,6 +11,10 @@ body {
     color: #4b4b4b;
 }
 
+.widthResponsive {
+    width: 90%;
+}
+
 /*ESTILOS DEL HEADER*/
 .bh {
     position: fixed;
@@ -24,11 +28,10 @@ body {
 }
 
 .cerrarVentana {
-    position: fixed;
-    top: 12px;
-    right: 12px;
+  
     border: 1px solid #a4a5a7;
     background-color: #fed522;
+    font-size: 20px;
 }
 
 .logoLogin {
@@ -37,11 +40,17 @@ body {
     margin: auto;
 }
 
+.xDiv{
+    display: flex;
+    justify-content: end;
+}
+
 .titulo {
     text-align: center;
     margin-top: auto;
     padding-bottom: 20px;
 }
+
 
 /*ESTILOS DEL MAIN*/
 .principal {

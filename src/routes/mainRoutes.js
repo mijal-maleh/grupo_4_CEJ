@@ -22,4 +22,5 @@ router.post('/Register',registerValidaciones,mainController.register);
 
 router.get('/error',mainController.error);
 
+
 module.exports = router;  

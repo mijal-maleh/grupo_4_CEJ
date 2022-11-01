@@ -83,6 +83,7 @@ const mainController = {
     error: (req,res)=>{
         return res.render('error');
     }
+
 }
 
 module.exports = mainController;
