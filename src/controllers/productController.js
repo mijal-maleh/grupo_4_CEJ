@@ -15,7 +15,7 @@ const productController = {
         productToShow = products[i]
       }
     }
-    res.render('productDetail' , {productToShow});
+    res.render('productDetail' , {productToShow, products });
 
   },
 
