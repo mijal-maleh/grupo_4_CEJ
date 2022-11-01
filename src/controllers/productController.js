@@ -40,7 +40,7 @@ const productController = {
         productToEdit = product
       }
     }
-    console.log (productToEdit.costoActividad)
+  
     res.render('productEdit', { productToEdit: productToEdit });
   },
 
@@ -64,10 +64,10 @@ console.log (req.file)
 
     //CHEQUEO SI HUBO CAMBIO DE FOTO Y COMPLETO LA INFO
     if (req.file == undefined) {
-      productEdited.photo = productOld.photo
+      productEdited.imagenActividad = productOld.imagenActividad
     }
     else {
-      let photoNamePathEdit = "/images/photoProduct/" + req.file.originalname;
+      let photoNamePathEdit = "/images/" + req.file.originalname;
       productEdited.photo = photoNamePathEdit;
     }
 

@@ -24,26 +24,31 @@
 
                 <main>
 
-                    
-                    <form action="/productEdit" method="POST" class="withResponsive">
-                        <H1>Pagina de Edicion de Actividades</H1>
-                    <br><br><br>
-                    <h2>Modificacion de Actividades</h2>
-                    <br>
+
+                    <form action="/productEdit" method="POST" class="withResponsive" enctype="multipart/form-data">
+                        
+                        <H1>Pagina de Modificacion de Actividades</H1>
+                        <br><br><br>
+                       
+                        <br>
                         <label for="typeProd">Tipo de Actividad</label>
                         <select class="inputEditProdType" name="type">
                             <% let prodTypes=['Encuentros','Cursos','Clases','Festividades','Viajes' ] %>
                                 <% for (let valueProd of prodTypes) {%>
-                                    <option value="<%= valueProd %>" <%=productToEdit.tipoActividad==valueProd
-                                        ? "selected" : "" %>>
+                                    <option value= <%= valueProd %> 
+                                    <%=productToEdit.tipoActividad==valueProd ? "selected" : "" %>>
                                         <%= valueProd %>
                                     </option>
                                     <% } %>
                         </select>
                         <br>
+
+
                         <label for="nameProd">Nombre de la Actividad</label>
                         <input type="text" name="nameProd" id="nameProd" value="<%=productToEdit.nombreActividad%>">
                         <br>
+
+
                         <label for="nameProd">Destacado</label>
                         <select name="destacado" id="destacado">
                             <option value="si" <%=productToEdit.destacado=="si" ? "selected" : "" %>> si
@@ -53,30 +58,37 @@
                         </select>
                         <br>
 
-                        <% let fechaArray = productToEdit.fechaActividad.split("-") %>
-                        <% let fechaForm = fechaArray[0] + "-" + fechaArray[1] + "-" + fechaArray[2] %>
-                        <label for="dateProd">Fecha de la Actividad</label>
-                        <input type="date" id="dateProd" name="dateProd" value=<%= fechaForm %> >
-                        <br>
+                        <% let fechaArray=productToEdit.fechaActividad.split("-") %>
+                            <% let fechaForm=fechaArray[0] + "-" + fechaArray[1] + "-" + fechaArray[2] %>
+                                <label for="dateProd">Fecha de la Actividad</label>
+                                <input type="date" id="dateProd" name="dateProd" value=<%=fechaForm %> >
+                                <br>
 
-                        <label for="timeProd">Hora de la Actividad</label>
-                        <input type="time" name="timeProd" value= <%=productToEdit.horaActividad %>>
-                        <br>
-                        <label for="costProd">Costo de la Actividad</label>
-                        <input type="number" name="costProd" value=<%=productToEdit.costoActividad %>>
-                        <br>
-                        <label for="photo">Imagen o Flyer de la Actividad</label>
-                        <img width="100%" src="<%=productToEdit.imagenActividad %> "
-                            alt="<%=productToEdit.photo_name %>">
-                        <input type="file" name="photo" accept=".jpg,.png,.gif">
-                        <br>
 
-                        <section class="actionsArt">
-                            <div class="botonesArt">
-                                <button class="buttonArt"><a>Editar la actividad</a></button>
-                            </div>
-                        </section>
+                                <label for="timeProd">Hora de la Actividad</label>
+                                <input type="time" name="timeProd" value=<%=productToEdit.horaActividad %>>
+                                <br>
+
+
+                                <label for="costProd">Costo de la Actividad</label>
+                                <input type="number" name="costProd" value=<%=productToEdit.costoActividad %>>
+                                <br>
+
+
+                                <label for="photo">Imagen o Flyer de la Actividad</label>
+                                <img width="100%" src=<%=productToEdit.imagenActividad %> 
+                                    alt=<%=productToEdit.photo_name %>>
+                                <input type="file" name="imagenActividad" accept=".jpg,.png,.gif">
+                                <br>
+
+
+                                <section class="actionsArt">
+                                    <div class="botonesArt">
+                                        <button class="buttonArt"><a>Confirmar cambios</a></button>
+                                    </div>
+                                </section>
                     </form>
+
                     <section class="actionsArt withResponsive">
                         <div class="botonesArt">
                             <form action="/productDelete" method="POST">
