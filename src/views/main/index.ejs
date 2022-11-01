@@ -15,10 +15,10 @@
             <%- include ('../partials/main-header.ejs')%>
 
                 <h1>Bienvenido a JABA</h1>
-               
+
                 <div class="contenedor-mayor">
                     <div class="slider">
-                        <ul >
+                        <ul>
                             <li>
                                 <div class="txt">
                                     <h4> Experimeta, disfruta, conocé </h4>
@@ -27,7 +27,7 @@
                                         marco de
                                         Iahadut"</p>
                                 </div>
-                                <img src="/images/shiur-casadas.jpg" alt=""> 
+                                <img src="/images/actividad.jpg" alt="">
                             </li>
 
 
@@ -71,11 +71,12 @@
                                     <p> Seccion inspirada exclusivamente para ellas. Estudio, paseos, cocina, arte..
                                     </p>
                                 </div>
-                                <img src="/images/cena-mujeres.jpg">
+                                <img src="/images/shiur-casadas.jpg">
                             </li>
 
                         </ul>
                     </div>
+
                     <div class="lateral-izq">
                         <section class="datos-semanales2">
                             <img src="/images/velas.webp" alt="velas" class="img-velas">
@@ -89,92 +90,50 @@
                         </section>
                         <section class="destacados-de-la-semana">
                             <h3> Destacados de la semana</h3>
-                            <div class="curso1">
-                                <div class="amasado">
-                                    <a href="/product/productDetail">
-                                        <img src="/images/jala_whats.jpg" alt="">
-                                    </a>
-                                </div>
-
-                                <div class="info">
-                                    <h6>Amasado de Jala Comunitario</h6>
-                                    <p class="publico"> Exclusivo mujeres</p>
-                                    <p class="detalles"> Actividad Presencial</p>
-                                    <p class="Fecha">Martes 30/08 </p>
-                                    <p class="horario"> 15 hs</p>
-                                    <p class="More">A cargo de Malka Jakobo</p>
-                                </div>
-                            </div>
-
-                            <div class="curso2">
-                                <div class="curso">
-                                    <img src="/images/jala_whats.jpg" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Amasado de Jala Comunitario</h6>
-                                    <p class="publico"> Exclusivo mujeres</p>
-                                    <p class="detalles"> Actividad presencial</p>
-                                    <p class="Fecha">Martes 30/08 </p>
-                                    <p class="horario"> 15 hs</p>
-                                    <p class="More">A cargo de Malka Jakobo</p>
-                                </div>
-                            </div>
-
-                            <div class="curso1">
-                                <div class="amasado">
-                                    <img src="/images/jala_whats.jpg" alt="">
-                                </div>
-
-                                <div class="info">
-
-                                    <h6>Amasado de Jala Comunitario</h6>
-                                    <p class="publico"> Exclusivo mujeres</p>
-                                    <p class="detalles"> Actividad Presencial</p>
-                                    <p class="Fecha">Martes 30/08 </p>
-                                    <p class="horario"> 15 hs</p>
-                                    <p class="More">A cargo de Malka Jakobo</p>
-                                </div>
-                            </div>
-
-                            <div class="curso2">
-                                <div class="curso">
-                                    <img src="/images/jala_whats.jpg" alt="">
-                                </div>
-                                <div class="info">
-                                    <h6>Amasado de Jala Comunitario</h6>
-                                    <p class="publico"> Exclusivo mujeres</p>
-                                    <p class="detalles"> Actividad presencial</p>
-                                    <p class="Fecha">Martes 30/08 </p>
-                                    <p class="horario"> 15 hs</p>
-                                    <p class="More">A cargo de Malka Jakobo</p>
-                                </div>
-                            </div>
+                                    
+                                        <% if (products != undefined) { %> 
+                                            <% products = products.filter (product => product.destacado == "si") %>
+                                            <% productsDestacadosCinco = products.slice (-3) %>
+                                            <% productsDestacadosCinco.forEach (product => { %> 
+                                         
+                                        <div class="curso1">
+                                            
+                                                <div class="amasado">
+                                                     <a href="/product/productDetail" <%= + product.id %> >
+                                                      <img src= <%=product.imagenActividad %>  alt="">
+                                                    </a>
+                                            </div>
+                                            
+                                            <div class="info">
+                                                
+                                                <i class=" <%= product.iconoTipoAct %>"></i>
+                                                <h4><%= product.nombreActividad %> </h4>
+                                                <p class="detalles"><%= product.tipoActividad %></p>
+                                                <p class="Fecha"><%= product.fechaActividad %>  </p>
+                                                <p class="horario"> <%= product.horaaActividad %></p>
+                                               
+                                            </div>
+                                        
+                                    </div>
+                                <% })} %> 
+                                                     
                         </section>
                     </div>
                 </div>
 
                 <section class="scroll-fotos">
-                    <marquee direction="right">
+                    <a href="/productList/All"><marquee direction="right" scrollamount=20 behavior=alternate>
                         <img src="/images/cena-mujeres.jpg" alt="">
-
                         <img src="/images/charla-parejas.jpg" alt="">
-
                         <img src="/images/estudio-con-rab.jpg" alt="">
-
                         <img src="/images/januka-calle.jpg" alt="">
-
                         <img src="/images/jupa.jpg" alt="">
-
                         <img src="/images/shiur.jpg" alt="">
-
                         <img src="/images/purim-magia.jpg" alt="">
-
                         <img src="/images/viaje.jpg" alt="">
-
                         <img src="/images/mezuza.jpg" alt="">
-
                         <img src="/images/peguisha2.jpg" alt="">
-                    </marquee>
+                    </marquee></a>
 
                 </section>
 

@@ -13,7 +13,10 @@ const { validationResult } = require('express-validator')
 
 const mainController = {
     index: (req,res)=>{
-      return res.render('index')
+    let archivoJSON = fs.readFileSync(path.join(__dirname, '../data/products.json'), 'utf-8');
+    let products = JSON.parse(archivoJSON);
+
+      return res.render('index', {products})
     },
     
     login: (req,res)=>{
