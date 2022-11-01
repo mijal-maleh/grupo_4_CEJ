@@ -93,8 +93,8 @@
                                     
                                         <% if (products != undefined) { %> 
                                             <% products = products.filter (product => product.destacado == "si") %>
-                                            <% productsDestacadosCinco = products.slice (-3) %>
-                                            <% productsDestacadosCinco.forEach (product => { %> 
+                                            <% productsDestacadosTres = products.slice (-3) %>
+                                            <% productsDestacadosTres.forEach (product => { %> 
                                          
                                         <div class="curso1">
                                             
@@ -106,13 +106,13 @@
                                             </div>
                                             
                                             <div class="info">
-                                                
+                                              
                                                 <i class=" <%= product.iconoTipoAct %>"></i>
                                                 <h4><%= product.nombreActividad %> </h4>
                                                 <p class="detalles"><%= product.tipoActividad %></p>
                                                 <p class="Fecha"><%= product.fechaActividad %>  </p>
                                                 <p class="horario"> <%= product.horaaActividad %></p>
-                                               
+                                    
                                             </div>
                                         
                                     </div>

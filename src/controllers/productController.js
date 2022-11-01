@@ -40,6 +40,7 @@ const productController = {
         productToEdit = product
       }
     }
+    console.log (productToEdit.costoActividad)
     res.render('productEdit', { productToEdit: productToEdit });
   },
 
@@ -51,6 +52,8 @@ const productController = {
     //INFO QUE VIENE DEL FORM DE EDITAR EL PRODUCTO
     const productEdited = req.body;
 
+console.log (req.body)
+console.log (req.file)
     //CONSIGO EL PRODUCTO ORIGINAL PARA RECUPERAR EL RESTO DE LA INFO
     let productOld
     for (let product of products) {

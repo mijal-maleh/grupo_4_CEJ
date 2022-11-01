@@ -24,18 +24,18 @@
 
                 <main>
 
-                    <H1>Pagina de Edicion de Actividades</H1>
+                    
+                    <form action="/productEdit" method="POST" class="withResponsive">
+                        <H1>Pagina de Edicion de Actividades</H1>
                     <br><br><br>
                     <h2>Modificacion de Actividades</h2>
                     <br>
-                    <form action="/productEdit" method="POST">
                         <label for="typeProd">Tipo de Actividad</label>
                         <select class="inputEditProdType" name="type">
                             <% let prodTypes=['Encuentros','Cursos','Clases','Festividades','Viajes' ] %>
                                 <% for (let valueProd of prodTypes) {%>
-                                    <option 
-                                        value="<%= valueProd %>" 
-                                        <%= productToEdit.tipoActividad == valueProd ? "selected" : ""%>>
+                                    <option value="<%= valueProd %>" <%=productToEdit.tipoActividad==valueProd
+                                        ? "selected" : "" %>>
                                         <%= valueProd %>
                                     </option>
                                     <% } %>
@@ -46,29 +46,46 @@
                         <br>
                         <label for="nameProd">Destacado</label>
                         <select name="destacado" id="destacado">
-                            <option value="SI" <%=productToEdit.destacado=="SI" ? "selected" : "" %>>
+                            <option value="si" <%=productToEdit.destacado=="si" ? "selected" : "" %>> si
                             </option>
-                            <option value="NO" <%=productToEdit.destacado=="NO" ? "selected" : "" %>>
+                            <option value="no" <%=productToEdit.destacado=="no" ? "selected" : "" %>> no
                             </option>
                         </select>
                         <br>
 
+                        <% let fechaArray = productToEdit.fechaActividad.split("-") %>
+                        <% let fechaForm = fechaArray[0] + "-" + fechaArray[1] + "-" + fechaArray[2] %>
                         <label for="dateProd">Fecha de la Actividad</label>
-                        <input type="date" name="dateProd" value='<%=productToEdit.fechaActividad %> '>
+                        <input type="date" id="dateProd" name="dateProd" value=<%= fechaForm %> >
                         <br>
+
                         <label for="timeProd">Hora de la Actividad</label>
-                        <input type="time" name="timeProd" value='<%=productToEdit.horaActividad %> '>
+                        <input type="time" name="timeProd" value= <%=productToEdit.horaActividad %>>
                         <br>
                         <label for="costProd">Costo de la Actividad</label>
-                        <input type="number" name="costProd" value='<%=productToEdit.costoActividad %> '>
+                        <input type="number" name="costProd" value=<%=productToEdit.costoActividad %>>
                         <br>
                         <label for="imageProd">Imagen o Flyer de la Actividad</label>
-                        <img width="100%" src="<%=productToEdit.imagenActividad %> " alt="<%=productToEdit.photo_name %>">
+                        <img width="100%" src="<%=productToEdit.imagenActividad %> "
+                            alt="<%=productToEdit.photo_name %>">
                         <input type="file" name="imageProd" accept=".jpg,.png,.gif">
                         <br>
-                        <button type="submit">MODIFICAR</button>
+
+                        <section class="actionsArt">
+                            <div class="botonesArt">
+                                <button class="buttonArt"><a>Editar la actividad</a></button>
+                            </div>
+                        </section>
                     </form>
-                    <br><br><br>
+                    <section class="actionsArt withResponsive">
+                        <div class="botonesArt">
+                            <form action="/productDelete" method="POST">
+                                <button class="buttonArt" name="<%=productToEdit.id %> "><a href="">Eliminar la
+                                        actividad</a></button>
+                            </form>
+
+                        </div>
+                    </section>
                 </main>
 
 

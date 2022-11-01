@@ -16,6 +16,7 @@
             <main>
                 <section class="detalleArt">
                     <div class="titulo">
+
                         <h3 class="titulo-text"><%= productToShow.nombreActividad%></h3>
                     </div>
                     <article class="articulo">
@@ -39,6 +40,15 @@
                                 <option class="precioPBox2" value="other">Otro valor</option>
                                 <input class="precioArtInput" type="text" placeholder=" Ingrese valor">
                             </select>
+                        </div>
+                        <br><br>
+                        <div class="precio">
+                            <h4 class="precioTitulo">Para agendar</h4>
+            
+                            <div class="agendar">
+                            <p class="precioP">Fecha: <%= productToShow.fechaActividad%></p>
+                            <p class="precioP">Hora: <%= productToShow.horaActividad%></p>
+                        </div>
                         </div>
                         <div class="oferta">
                             <h4 class="ofertaTitulo"></h4>
