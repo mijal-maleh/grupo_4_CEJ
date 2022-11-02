@@ -8,7 +8,7 @@ router.get('/productList/:tipo',productController.productList);
 router.get('/productDetail/:id',productController.productDetail);
 router.get('/productEdit/:id', productController.productEdit);
 router.post('/productEdit',uploadFile.single ("imagenActividad"), productController.postEdit);
-router.post('/productDelete', productController.postDelete);
+router.post('/productDelete/:id', productController.postDelete);
 router.get('/productCart',productController.productCart);
 
 
