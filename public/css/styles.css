@@ -37,7 +37,7 @@ H1 {
     border: #a4a5a7 solid 2px;
     /* display: inline-block;*/
     justify-content: center;
-    
+    align-items: center;
     bottom: 20px;
       background-color: rgba(77, 77, 77, 0.03);
 }
@@ -49,7 +49,7 @@ H1 {
     animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-direction: infinite alternate ease-in-out;
-  
+    align-items: center
 }
 
 .slider li {
@@ -57,6 +57,7 @@ H1 {
     height: 60vw;
     list-style: none;
     display: flex;
+    
 }
 
 .slider li p {
@@ -64,11 +65,12 @@ H1 {
 }
 
 .slider img {
-    width: 60%;
-    height: 100%;
+    width: 45%;
+    height: 75%;
     object-fit:scale-down;
     margin-bottom: 10px;
     position: relative;
+    align-items: center
 }
 
 .slider ul li h4,
@@ -193,6 +195,7 @@ h6 {
    
 }
 
+
 .amasado img {
     width: 100px;
     height: 100%;
@@ -225,7 +228,9 @@ h6 {
     object-fit: cover;
 }
 
-.scroll-fotos2 {
+.imgSlider {
+    border-radius: 100%;
+    box-shadow: #894243 ;
 
 }
 
@@ -253,8 +258,11 @@ h6 {
     .slider {
         width: 80%;
         flex-direction: row-reverse;
-        background-image: url('./images/rebbe-fondo.jpg');
-    }
+        background-image: url('../images/scroll.jpg'); 
+        background-repeat: no-repeat;
+        background-size:130%; 
+        background-position: center;
+    } 
 
     .lateral-izq {
         display: flex;
@@ -303,6 +311,8 @@ h6 {
         justify-content: center;
         border: #894243 solid;
         margin-bottom: 0px;
+        background-image: url("../images/luaj.png");
+        
     }
 
     .img-cronograma {
@@ -370,7 +380,6 @@ h6 {
     .curso2 {
         height: 45px;
         margin-top: 5px;
-
     }
 
     h6 {

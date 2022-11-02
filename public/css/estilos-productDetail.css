@@ -5,6 +5,10 @@
     font-family: questrial;
 }
 
+.noShow {
+    display: none;
+}
+
 .detalleArt {
     width: 90%;
     max-height: 50%;
@@ -133,6 +137,17 @@ input {
     padding: 10px;
 }
 
+.agendar {
+    display: flex;
+    font-weight: bold;
+}
+
+.withResponsive {
+    width: 90%;
+    margin: auto;
+}
+
+
 /*CARROUSEL DE IMAGENES DEL FOOTER*/
 
 
@@ -160,6 +175,10 @@ input {
     .descrArtTitulo,
     .footerTitulo {
         font-size: 30px;
+    }
+
+    .withResponsive {
+        width: 75%;
     }
 
     .precioP,
@@ -191,7 +210,9 @@ input {
     main {
         position: relative;
     }
-
+    .withResponsive {
+        width: 50%;
+    }
     .detalleArt {
         position: relative;
         top: 20px;

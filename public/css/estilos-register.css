@@ -10,6 +10,10 @@ body{
     background-color: rgba(77,77,77,0.03);
     color: #4b4b4b;
 }
+.widthResponsive {
+    width: 90%;
+}
+
 
 /*ESTILOS DEL HEADER*/
 .bh {
@@ -25,17 +29,20 @@ body{
 }
 
 .cerrarVentana {
-    position: fixed;
-    top: 12px;
-    right: 12px;
+    
     border: 1px solid #a4a5a7;
     background-color: #fed522;
+    font-size: 20px;
 }
 
 .logoRegister {
     width: 35%;
     display: block;
     margin: auto;
+}
+.xDiv{
+    display: flex;
+    justify-content: end;
 }
 
 .titulo {
