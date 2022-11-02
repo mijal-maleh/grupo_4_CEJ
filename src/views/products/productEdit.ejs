@@ -26,21 +26,21 @@
 
 
                     <form action="/productEdit" method="POST" class="withResponsive" enctype="multipart/form-data">
-                        
+
                         <input type="number" name="id" class="noShow" value="<%=productToEdit.id%>">
 
 
                         <H1>Pagina de Modificacion de Actividades</H1>
                         <br><br><br>
-                        
+
                         <br>
                         <label for="typeProd">Tipo de Actividad</label>
                         <select class="inputEditProdType" name="type">
                             <% let prodTypes=['Encuentros','Cursos','Clases','Festividades','Viajes' ] %>
                                 <% for (let valueProd of prodTypes) {%>
-                                    <option value= <%= valueProd %> 
-                                    <%=productToEdit.tipoActividad==valueProd ? "selected" : "" %>>
-                                        <%= valueProd %>
+                                    <option value=<%=valueProd %>
+                                        <%=productToEdit.tipoActividad==valueProd ? "selected" : "" %>>
+                                            <%= valueProd %>
                                     </option>
                                     <% } %>
                         </select>
@@ -78,28 +78,31 @@
                                 <br>
 
                                 <label for="descProd">Descripcion de la Actividad</label>
-                                <input type="textarea" name="descProd" id="descProd" value="<%=productToEdit.descripcionActividad %>">
+                                <input type="textarea" name="descProd" id="descProd"
+                                    value="<%=productToEdit.descripcionActividad %>">
                                 <br>
 
                                 <label for="photo">Imagen o Flyer de la Actividad</label>
-                                <img width="100%" src=<%=productToEdit.imagenActividad %> 
-                                    alt=<%=productToEdit.photo_name %>>
-                                <input type="file" name="imagenActividad" accept=".jpg,.png,.gif">
-                                <br>
+                                <img width="100%" src=<%=productToEdit.imagenActividad %>
+                                alt=<%=productToEdit.photo_name %>>
+                                    <input type="file" name="imagenActividad" accept=".jpg,.png,.gif">
+                                    <br>
 
 
-                                <section class="actionsArt">
-                                    <div class="botonesArt">
-                                        <button class="buttonArt"><a>Confirmar cambios</a></button>
-                                    </div>
-                                </section>
+                                    <section class="actionsArt">
+                                        <div class="botonesArt">
+                                            <button class="buttonArt"><a>Confirmar cambios</a></button>
+                                        </div>
+                                    </section>
                     </form>
 
                     <section class="actionsArt withResponsive">
                         <div class="botonesArt">
-                            <form action="/productDelete" method="POST">
-                                <button class="buttonArt" name="<%=productToEdit.id %> "><a href="">Eliminar la
-                                        actividad</a></button>
+
+                            <form action="/productDelete/<%=productToEdit.id %>" method="POST"
+                                enctype="multipart/form-data" >
+                                <button class="buttonArt"><a> Eliminar la
+                                        actividad </a></button>
                             </form>
 
                         </div>

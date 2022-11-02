@@ -120,9 +120,27 @@ const productController = {
   },
 
   postDelete: (req, res) => {
+    let archivoJSON = fs.readFileSync(path.join(__dirname, '../data/products.json'), 'utf-8');
+    let products = JSON.parse(archivoJSON);
 
+    let idProduct = req.params.idProduct;
 
-    res.render("productList", { 'products': products, tipo })
+    let productsEdited = [];
+    let productDeletedName;
+    
+    for (let i = 0; i < products.length; i++) {
+
+        if (products[i].id != idProduct) {
+            productsEdited.push(products[i])
+        } else {
+            productDeletedName = products[i].nombreActividad;
+        }
+    }
+    let productJSON = JSON.stringify(productsEdited);
+    fs.writeFileSync(path.join(__dirname, "../data/products.json"), productJSON, "utf-8");
+
+    let tipo="All"
+    res.render("productList", { 'products': productsEdited, tipo, 'mensaje': 'La Actividad "' + productDeletedName + '" fue eliminada exitosamente' })
   },
 
   productCart: (req, res) => {

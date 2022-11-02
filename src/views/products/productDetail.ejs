@@ -17,7 +17,9 @@
                 <section class="detalleArt">
                     <div class="titulo">
 
-                        <h3 class="titulo-text"><%= productToShow.nombreActividad%></h3>
+                        <h3 class="titulo-text">
+                            <%= productToShow.nombreActividad%>
+                        </h3>
                     </div>
                     <article class="articulo">
                         <img src="<%= productToShow.imagenActividad%>" alt="amasado" width="100%">
@@ -27,16 +29,20 @@
                     <h3 class="descrArtTitulo">
                         Descripción
                     </h3>
-                    <p><%= productToShow.descripcionActividad%>
+                    <p>
+                        <%= productToShow.descripcionActividad%>
                     </p>
                 </section>
                 <section class="main-body">
                     <section class="priceArt">
                         <div class="precio">
                             <h4 class="precioTitulo">Costo</h4>
-                            <p class="precioP">Colaboración sugerida <%= productToShow.costoActividad%></p>
+                            <p class="precioP">Colaboración sugerida <%= productToShow.costoActividad%>
+                            </p>
                             <select class="precioArt" name="precioArt" id="precioArt">
-                                <option class="precioPBox1" value=<%= productToShow.costoActividad%> selected><%= productToShow.costoActividad%></option>
+                                <option class="precioPBox1" value=<%=productToShow.costoActividad%> selected><%=
+                                        productToShow.costoActividad%>
+                                </option>
                                 <option class="precioPBox2" value="other">Otro valor</option>
                                 <input class="precioArtInput" type="text" placeholder=" Ingrese valor">
                             </select>
@@ -44,11 +50,13 @@
                         <br><br>
                         <div class="precio">
                             <h4 class="precioTitulo">Para agendar</h4>
-            
+
                             <div class="agendar">
-                            <p class="precioP">Fecha: <%= productToShow.fechaActividad%></p>
-                            <p class="precioP">Hora: <%= productToShow.horaActividad%></p>
-                        </div>
+                                <p class="precioP">Fecha: <%= productToShow.fechaActividad%>
+                                </p>
+                                <p class="precioP">Hora: <%= productToShow.horaActividad%>
+                                </p>
+                            </div>
                         </div>
                         <div class="oferta">
                             <h4 class="ofertaTitulo"></h4>
@@ -61,34 +69,43 @@
                         <div class="botonesArt">
                             <button class="buttonArt"><a href="">Inscribirse Ahora</a></button>
                             <form action="">
-                            <button class="buttonArt"><a href="">Agregar al Carrito</a></button>
-                        </form>
+                                <button class="buttonArt"><a href="">Agregar al Carrito</a></button>
+                            </form>
                         </div>
                         <div class="accionesArt">
                             <div class="favoritos">
                                 <i class="far fa-heart"></i>
-                                <a href=""><p>Agregar a favoritos</p></a>
+                                <a href="">
+                                    <p>Agregar a favoritos</p>
+                                </a>
                             </div>
                             <div class="compartir">
                                 <i class="fas fa-share-alt"></i>
-                                <a href=""><p>Compartir</p></a>
+                                <a href="">
+                                    <p>Compartir</p>
+                                </a>
                             </div>
                         </div>
                     </section>
                     <br><br>
                     <section class="actionsArt">
                         <div class="botonesArt">
-                            <% let rutaEdit = "/productEdit/" + productToShow.id   %> 
-                            <button class="buttonArt"><a href=<%=rutaEdit %> > Editar la actividad</a></button>
-                            <form action="<% rutaEdit %> "></form>
-                            <button class="buttonArt"><a href="">Eliminar la actividad</a></button>
+                            <% let rutaEdit="/productEdit/" + productToShow.id %>
+                                <button class="buttonArt"><a href=<%=rutaEdit %> > Editar la actividad</a></button>
+                                <% let rutaDelete="/productDelete/" + productToShow.id %>
+                                
+                                    <form action="<% rutaDelete %>" method="POST">
+                                        <button class="buttonArt"><a>Eliminar la actividad</a></button>
+                                    </form>
+
                         </div>
                     </section>
                     <section class="descrArt">
                         <h3 class="descrArtTitulo">
                             Descripción
                         </h3>
-                        <p><%= productToShow.descripcionActividad%>
+                        <p>
+                            <%= productToShow.descripcionActividad%>
                         </p>
                     </section>
                 </section>
@@ -99,11 +116,11 @@
                 </section>
 
                 <footer class="footerArt">
-                    <% if (products != undefined) { %> 
-                    <% products.forEach (product => { %> 
-                        
-                    <img src=<%= product.imagenActividad %>  alt=<%= product.photo_name %>  width="100%">
-                    <% })} %> 
+                    <% if (products !=undefined) { %>
+                        <% products.forEach (product=> { %>
+
+                            <img src=<%=product.imagenActividad %> alt=<%= product.photo_name %> width="100%">
+                                <% })} %>
                 </footer>
             </main>
             <footer>
