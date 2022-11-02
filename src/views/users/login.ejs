@@ -13,6 +13,8 @@
         <img src="/images/logotransp.png" alt="logo JABA" class="logoLogin" width="50%">
 
        
+    
+
         <h2 class="titulo">INGRESO A JABA</h2>
     </headerLogin>
     <main class="principal">
@@ -24,26 +26,37 @@
         </button>
         </div>
 
-        <div class="formu1">
-            <label for="usuario">USUARIO O CORREO ELECTRÓNICO</label>
-            <br><br>
-            <input type="text" name="usuario" id="usuario" class="celda">
+        <div class="text-danger">
+            <% if(locals.error){ error.forEach(errors=>{%>
+                <p style="color:rgb(245, 232, 50)">
+                    <%= errors.msg %>
+                </p>
+                <%}) }%>
         </div>
-        <div class="formu2">
-            <label for="clave">CONTRASEÑA</label>
-            <br><br>
-            <input type="text" name="clave" id="clave" class="celda">
-        </div>
-        <div class="olvido">
-            <a href="#" class="olvidolink">¿Olvidaste la contraseña?</a>
-        </div>
-        <div class="ingresar">
-            <button type="submit" class="boton-ingresar">INGRESAR</button>
-        </div>
-        <div class="recordar">
-            <input type="checkbox" name="recordar" id="recordar">
-            <label for="recordar">RECORDAR MIS DATOS</label>
-        </div>
+        <form action="/login" method="post">
+            <div class="formu1">
+                <label for="usuario">USUARIO O CORREO ELECTRÓNICO</label>
+                <br><br>
+                <input type="email" name="email" id="usuario" class="celda">
+            </div>
+
+            <div class="formu2">
+
+                <label for="clave">CONTRASEÑA</label>
+                <br><br>
+                <input type="password" name="contrasenia" id="clave" class="celda">
+            </div>
+            <div class="olvido">
+                <a href="#" class="olvidolink">¿Olvidaste la contraseña?</a>
+            </div>
+            <div class="ingresar">
+                <button type="submit" class="boton-ingresar">INGRESAR</button>
+            </div>
+            <div class="recordar">
+                <input type="checkbox" name="recordar" id="recordar">
+                <label for="recordar">RECORDAR MIS DATOS</label>
+            </div>
+        </form>
     </main>
     <footer class="footer-login">
         <label for="registro" class="registro">¿AÚN NO ESTÁS REGISTRADO?</label>

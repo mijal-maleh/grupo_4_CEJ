@@ -25,9 +25,11 @@
         </div>
         <div class="formu1">
             <div class="text-danger">
-    <% if(locals.error){ error.forEach(errors=>{%>
-            <%= errors.msg %>
-        <%}) }%>
+                <% if(locals.error){ error.forEach(errors=>{%>
+                    <p style="color:rgb(245, 232, 50)"></p>>
+                        <%= errors.msg %>
+                    </p>
+                    <%}) }%>
     </div>  
     <form action="/register" method="POST"> 
             <label for="nombre">NOMBRE</label>
@@ -47,12 +49,12 @@
         <div class="formu2">
             <label for="clave">CONTRASEÑA</label>
             <br><br>
-            <input type="password" name="clave" id="clave" class="celda">
+            <input type="password" name="contrasenia" id="clave" class="celda">
         </div>
         <div class="formu2">
             <label for="clave-control">REPETIR CONTRASEÑA</label>
             <br><br>
-            <input type="password" name="claveControl" id="claveControl" class="celda">
+            <input type="password" name="confirmacionDeContrasenia" id="confirmacionDeContrasenia" class="celda">
         </div>
         <div class="formu2">
             <label for="fecha-nac">FECHA DE NACIMIENTO</label>

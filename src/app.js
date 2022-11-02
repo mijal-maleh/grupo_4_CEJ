@@ -34,10 +34,10 @@ app.use(productRouter);
 app.use(mainRouter);
 app.use(usersRouter);
 
-app.use((req,res,next)=> {
+/* app.use((req,res,next)=> {
     res.status(404).render("error")
 })
-
+ */
 app.listen(3001,()=>{
     console.log("B'H JABA en 3001");
 })
