@@ -15,7 +15,7 @@ const productController = {
   productDetail: (req, res) => {
 
     let id = Number(req.params.id)
-    console.log(id)
+    
     let archivoJSON = fs.readFileSync(path.join(__dirname, '../data/products.json'), 'utf-8');
     let products = JSON.parse(archivoJSON);
     let productToShow
@@ -52,44 +52,58 @@ const productController = {
     //INFO QUE VIENE DEL FORM DE EDITAR EL PRODUCTO
     const productEdited = req.body;
 
-console.log (req.body)
-console.log (req.file)
     //CONSIGO EL PRODUCTO ORIGINAL PARA RECUPERAR EL RESTO DE LA INFO
     let productOld
     for (let product of products) {
-      if (product.id == productEdited.id) {
+      if (product.id == Number(productEdited.id)) {
         productOld = product
       }
     }
 
     //CHEQUEO SI HUBO CAMBIO DE FOTO Y COMPLETO LA INFO
+    let imagenActividad;
+    let photo_name;
     if (req.file == undefined) {
-      productEdited.imagenActividad = productOld.imagenActividad
+      imagenActividad = productOld.imagenActividad
+      photo_name = productOld.photo_name
     }
     else {
       let photoNamePathEdit = "/images/" + req.file.originalname;
-      productEdited.photo = photoNamePathEdit;
+      imagenActividad = photoNamePathEdit;
+      photo_name = req.file.filename
     }
-
-    //EVITA CONFLICTO DE TIPO EN EL ID
-    productEdited.id = productOld.id;
-
+  
+    // ASIGNO EL ICONO
+    let tipos = ["Clases", "Encuentros", "Cursos","Festividades","Viajes"]
+    let icons = ["fa-solid fa-person-chalkboard", "fa-solid fa-utensils", "fa-solid fa-book" , "fa-solid fa-hanukiah" , "fa-solid fa-plane-departure"]
+    let icon
+  for (let i = 0; i < tipos.length; i++) {
+    
+    if (tipos[i] = productEdited.type){
+      icon = icons[i];
+    }
+  }
+  
     //RECONSTRUYO EL OL
     let finalProductEdited = {
       "id": productEdited.id,
-      "product_name": productEdited.product_name,
-      "price": productEdited.price,
-      "type": productEdited.type,
-      "photo": productEdited.photo,
-      "photo_name": productEdited.photo_name,
-      "descrip": productEdited.descrip
+      "tipoActividad": productEdited.type,
+      "iconoTipoAct" : icon,
+      "nombreActividad": productEdited.nameProd,
+      "destacado": productEdited.destacado,
+      "descripcionActividad": productEdited.descProd,
+      "fechaActividad": productEdited.dateProd,
+      "horaActividad": productEdited.timeProd,
+      "costoActividad": productEdited.costProd,
+      "imagenActividad": imagenActividad,
+      "photo_name": photo_name,
     };
-
+   
     //REEMPLAZO EL PRODUCTO EN EL ARRAY DE PRODUCTOS
     let productsEdited = [];
     for (let i = 0; i < products.length; i++) {
 
-      if (products[i].id == productEdited.id) {
+      if (products[i].id == finalProductEdited.id) {
         productsEdited.push(finalProductEdited)
       } else {
         productsEdited.push(products[i])
@@ -101,7 +115,8 @@ console.log (req.file)
     let productJSON = JSON.stringify(productsEdited);
     fs.writeFileSync(path.join(__dirname, "../data/products.json"), productJSON, "utf-8");
 
-    res.render('productDetail', { productToShow, products });
+    productToShow = finalProductEdited
+    res.render('productDetail', {productToShow, products });
   },
 
   postDelete: (req, res) => {

@@ -27,9 +27,12 @@
 
                     <form action="/productEdit" method="POST" class="withResponsive" enctype="multipart/form-data">
                         
+                        <input type="number" name="id" class="noShow" value="<%=productToEdit.id%>">
+
+
                         <H1>Pagina de Modificacion de Actividades</H1>
                         <br><br><br>
-                       
+                        
                         <br>
                         <label for="typeProd">Tipo de Actividad</label>
                         <select class="inputEditProdType" name="type">
@@ -74,6 +77,9 @@
                                 <input type="number" name="costProd" value=<%=productToEdit.costoActividad %>>
                                 <br>
 
+                                <label for="descProd">Descripcion de la Actividad</label>
+                                <input type="textarea" name="descProd" id="descProd" value="<%=productToEdit.descripcionActividad %>">
+                                <br>
 
                                 <label for="photo">Imagen o Flyer de la Actividad</label>
                                 <img width="100%" src=<%=productToEdit.imagenActividad %> 
