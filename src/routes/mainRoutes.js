@@ -28,14 +28,14 @@ const loginValidaciones =[
 
 router.get('/',mainController.index);
 
-router.get('/login',mainController.getLogin);
+/* router.get('/login',mainController.getLogin); */
 router.post('/login',loginValidaciones,mainController.login);
 
 router.get('/Register',mainController.getRegister);
 router.post('/Register',registerValidaciones,mainController.register);
 
 router.get('/error',mainController.error);
-router.get('/logout', mainController.logout);
+/* router.get('/logout', mainController.logout); */
 
 
 module.exports = router;  
