@@ -6,7 +6,7 @@ const cookieParser = require('cookie-Parser');
 const session = require("express-session"); 
 /* const rememberMiddleware = require ("./middlewares/rememberMiddleware")
  */
-const carritoMiddleware = require ("./middlewares/carritoMiddleware")
+const carritoMiddleware = require ("./middlewares/carritoMiddleware") 
 const methodOverride = require ("method-override");
 
 const productRouter = require('./routes/productRoutes');
@@ -29,17 +29,17 @@ app.use(morgan('tiny'))
 app.use(cookieParser()); 
 app.use(session({secret:"Mashiaj ya", resave: false, saveUninitialized: false})) 
 /* app.use(rememberMiddleware); */
-app.use(carritoMiddleware)
+app.use(carritoMiddleware) 
 
 
 app.use(productRouter);
 app.use(mainRouter);
 app.use(usersRouter);
 
-/* app.use((req,res,next)=> {
+app.use((req,res,next)=> {
     res.status(404).render("error")
 })
- */
+
 app.listen(3001,()=>{
     console.log("B'H JABA en 3001");
 })

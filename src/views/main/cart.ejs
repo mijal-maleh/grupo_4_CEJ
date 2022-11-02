@@ -31,7 +31,7 @@
             <% cart.forEach (product=>{ %>
 
                 
-                <% subtotal = subtotal + product.costoActividad %> 
+                <% subtotal = Number(subtotal) + Number(product.costoActividad) %> 
 
                 <div class="carritoProd">
                     <div class="carritoTypeDiv">
@@ -47,6 +47,7 @@
                         <div class="carritoDetail"><%=product.costoActividad %> </div>
                     </div>
                     <br>
+                    
                 </div>
                 <br>
 
