@@ -12,79 +12,51 @@
         <p class="bh">B"H</p>
         <a href="/"><img src="/images/logotransp.png" alt="logo JABA" class="logoLogin" width="50%"></a>
 
-        
 
-        
+
+
     </headerLogin>
     <main>
-        
+        <% let subtotal = "0"%> 
         <section class="principal">
-            
+
             <div class="xDiv">
                 <button>
-                <input type="button" onclick="history.back()" name="volver atrás" value=" x " class="cerrarVentana">
-            </button>
+                    <input type="button" onclick="history.back()" name="volver atrás" value=" x " class="cerrarVentana">
+                </button>
             </div>
             <h2 class="titulo">CARRITO DE SUSCRIPCIONES</h2>
-            <div class="carritoProd">
-                <div class="carritoTypeDiv">
-                    <i class=></i>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <i class="fa-solid fa-house-chimney-window"></i>
-                    <i class="fa-solid fa-person-chalkboard"></i>
-                 
-                    <i class="fa-solid fa-child-reaching"></i>
-                    <i class="fa-solid fa-book"></i>
-                    <p class="carritoType">Shiur/Clase/Charla</p>
-                </div>
-                <div class="carritoNameDiv">
-                    <h2>Shiur Semanal de Tania</h2>
-                </div>
-                <div class="carritoDetailsDiv">
-                    <div class="carritoDetail">22/Oct/2022</div>
-                    <div class="carritoDetail">19hs</div>
-                    <div class="carritoDetail">$600</div>
-                </div>
-                <br>
-            </div>
-            <br>
-            <div class="carritoProd">
-                <div class="carritoTypeDiv">
-                    <i class="fa-solid fa-house-chimney-window"></i>
-                    <p class="carritoType">Actividad Parejas</p>
-                </div>
-                <div class="carritoNameDiv">
-                    <h2>Shiur Semanal de Tania</h2>
-                </div>
-                <div class="carritoDetailsDiv">
-                    <div class="carritoDetail">22/Oct/2022</div>
-                    <div class="carritoDetail">19hs</div>
-                    <div class="carritoDetail">$600</div>
+
+
+            <% cart.forEach (product=>{ %>
+
+                
+                <% subtotal = subtotal + product.costoActividad %> 
+
+                <div class="carritoProd">
+                    <div class="carritoTypeDiv">
+                        <i class="<%=product.iconoTipoAct%>"></i>
+                        <p class="carritoType"><%=product.tipoActividad %> </p>
+                    </div>
+                    <div class="carritoNameDiv">
+                        <h2><%=product.nombreActividad %> </h2>
+                    </div>
+                    <div class="carritoDetailsDiv">
+                        <div class="carritoDetail"><%=product.fechaActividad %> </div>
+                        <div class="carritoDetail"><%=product.horaActividad %> </div>
+                        <div class="carritoDetail"><%=product.costoActividad %> </div>
+                    </div>
+                    <br>
                 </div>
                 <br>
-            </div>
-            <br>
-            <div class="carritoProd">
-                <div class="carritoTypeDiv">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <p class="carritoType">Jaguím/Festividades</p>
-                </div>
-                <div class="carritoNameDiv">
-                    <h2>Shiur Semanal de Tania</h2>
-                </div>
-                <div class="carritoDetailsDiv">
-                    <div class="carritoDetail">22/Oct/2022</div>
-                    <div class="carritoDetail">19hs</div>
-                    <div class="carritoDetail">$600</div>
-                </div>
-                <br>
-            </div>
+
+               <% }) %>
 
         </section>
         <section class="principal">
             <div class="carritoSubto">
-                <p>Subtotal</p>
-                <p>$1800</p>
+                <h2>Subtotal</h2>
+                <h3>$ <%=subtotal %> </h3>
             </div>
         </section>
     </main>

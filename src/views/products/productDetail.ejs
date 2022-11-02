@@ -68,8 +68,9 @@
                     <section class="actionsArt">
                         <div class="botonesArt">
                             <button class="buttonArt"><a href="">Inscribirse Ahora</a></button>
-                            <form action="">
-                                <button class="buttonArt"><a href="">Agregar al Carrito</a></button>
+                            <form action="/cart" method="POST">
+                                <input type="number" name="idCart" id="idCart" Value="<%=productToShow.id %>" class="noShow">
+                                <button class="buttonArt"><a>Agregar al Carrito</a></button>
                             </form>
                         </div>
                         <div class="accionesArt">

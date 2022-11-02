@@ -6,6 +6,7 @@ const cookieParser = require('cookie-Parser');
 const session = require("express-session"); 
 /* const rememberMiddleware = require ("./middlewares/rememberMiddleware")
  */
+const carritoMiddleware = require ("./middlewares/carritoMiddleware")
 const methodOverride = require ("method-override");
 
 const productRouter = require('./routes/productRoutes');
@@ -28,6 +29,7 @@ app.use(morgan('tiny'))
 app.use(cookieParser()); 
 app.use(session({secret:"Mashiaj ya", resave: false, saveUninitialized: false})) 
 /* app.use(rememberMiddleware); */
+app.use(carritoMiddleware)
 
 
 app.use(productRouter);
