@@ -6,8 +6,8 @@ const uploadFile = require ('../middlewares/multerProducts.js')
 
 router.get('/productList/:tipo',productController.productList);
 router.get('/productDetail/:id',productController.productDetail);
-router.post('/productEdit', productController.postEdit);
-router.get('/productEdit/:id',uploadFile.single ("imagenActividad"), productController.productEdit);
+router.get('/productEdit/:id', productController.productEdit);
+router.post('/productEdit',uploadFile.single ("imagenActividad"), productController.postEdit);
 router.post('/productDelete', productController.postDelete);
 router.get('/productCart',productController.productCart);
 
