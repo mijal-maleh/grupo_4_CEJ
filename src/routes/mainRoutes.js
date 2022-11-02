@@ -37,4 +37,5 @@ router.post('/Register',registerValidaciones,mainController.register);
 router.get('/error',mainController.error);
 router.get('/logout', mainController.logout);
 
+
 module.exports = router;  

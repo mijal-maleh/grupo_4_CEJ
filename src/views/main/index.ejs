@@ -27,7 +27,7 @@
                                         marco de
                                         Iahadut"</p>
                                 </div>
-                                <img src="/images/actividad.jpg" alt="">
+                                <img src="/images/actividad.jpg" alt="" width="30%" height="50%">
                             </li>
 
 
@@ -59,7 +59,7 @@
                             <li><img src="/images/roshana.webp" alt="">
                                 <div class="txt">
                                     <h4>viaja por el año</h4>
-                                    <p> LLega preparado a cada festividad. Historia, costumbres, fechas, recetas..
+                                    <p> Llega preparado a cada festividad. Historia, costumbres, fechas, recetas..
                                     </p>
                                 </div>
                             </li>
@@ -124,7 +124,13 @@
 
                 <section class="scroll-fotos">
                     <a href="/productList/All"><marquee direction="right" scrollamount=20 behavior=alternate>
-                        <img src="/images/cena-mujeres.jpg" alt="">
+                        <% let images = [] %> 
+                        <% for (let index = 0; index < products.length; index++) { %>
+                           <% images.push(products[index].imagenActividad) %>                           
+                        <% } %> 
+                        <% images.forEach (image => { %> 
+                            <img src= <%= image %> alt="">
+                        <!-- <img src="/images/cena-mujeres.jpg" alt="">
                         <img src="/images/charla-parejas.jpg" alt="">
                         <img src="/images/estudio-con-rab.jpg" alt="">
                         <img src="/images/januka-calle.jpg" alt="">
@@ -133,7 +139,8 @@
                         <img src="/images/purim-magia.jpg" alt="">
                         <img src="/images/viaje.jpg" alt="">
                         <img src="/images/mezuza.jpg" alt="">
-                        <img src="/images/peguisha2.jpg" alt="">
+                        <img src="/images/peguisha2.jpg" alt=""> -->
+                        <% }) %> 
                     </marquee></a>
 
                 </section>

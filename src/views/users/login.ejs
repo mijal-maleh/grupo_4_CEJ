@@ -7,20 +7,25 @@
         <title>Ingreso</title>
 </head>
 
-<body class="tipografia">
-    <headerLogin class="encabezado">
+<body class="tipografia widthResponsive">
+    <headerLogin class="encabezado widthResponsive" >
         <p class="bh">B"H</p>
         <img src="/images/logotransp.png" alt="logo JABA" class="logoLogin" width="50%">
 
-        <button type="button" class="cerrarVentana">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-
-
+       
+    
 
         <h2 class="titulo">INGRESO A JABA</h2>
     </headerLogin>
     <main class="principal">
+        
+           
+        <div class="xDiv">
+            <button>
+            <input type="button" onclick="history.back()" name="volver atrás" value=" x " class="cerrarVentana">
+        </button>
+        </div>
+
         <div class="text-danger">
             <% if(locals.error){ error.forEach(errors=>{%>
                 <p style="color:rgb(245, 232, 50)">

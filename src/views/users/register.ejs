@@ -12,17 +12,17 @@
         <p class="bh">B"H</p>
         <img src="/images/logotransp.png" alt="logo JABA" class="logoRegister" width="50%">
 
-        <button type="button" class="cerrarVentana">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-
-
-
         <h2 class="titulo">CREA TU CUENTA EN JABA</h2>
     </headerLogin>
 
-
+   
     <main class="principal">
+        <div class="xDiv">
+            <button>
+            <input type="button" onclick="history.back()" name="volver atrás" value=" x " class="cerrarVentana">
+        </button>
+    
+        </div>
         <div class="formu1">
             <div class="text-danger">
                 <% if(locals.error){ error.forEach(errors=>{%>

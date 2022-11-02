@@ -4,8 +4,8 @@ const path = require ('path');
 const morgan = require ('morgan', {})
 const cookieParser = require('cookie-Parser'); 
 const session = require("express-session"); 
-const rememberMiddleware = require ("./middlewares/rememberMiddleware")
-
+/* const rememberMiddleware = require ("./middlewares/rememberMiddleware")
+ */
 const methodOverride = require ("method-override");
 
 const productRouter = require('./routes/productRoutes');
